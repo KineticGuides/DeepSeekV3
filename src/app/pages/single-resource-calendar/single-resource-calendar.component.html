@@ -1,0 +1,48 @@
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12 col-12">
+    
+          <div class="profile-header">
+            <h1>Welcome, {{ data.user.first_name }}</h1>
+            <div class="profile-header-content">
+              <div class="profile-header-tiles">
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <div class="profile-tile">
+                          <span class="icon">
+                            <i class="bi bi-shop"></i>
+                          </span>
+                          <h6>
+                            <select class="form-control" style="width: 360px!important" name="practice" [(ngModel)]="practice"><option value="1">Reed Medical Group</option></select></h6>
+                        </div>
+                      </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-person-video2"></i>
+                      </span>
+                      <h6>
+                        <select class="form-control" style="width: 360px!important" name="practice" [(ngModel)]="practice"><option value="1">Reed Medical Group</option></select></h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                        <span class="icon">
+                            <i class="bi bi-stars"></i>
+                          </span>
+                        <app-hey-skipper style="width:100%" [card]="'N'" [rows]="'1'" [title]="'N'" [icons]="'N'" [button]="'N'"></app-hey-skipper>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-12">
+                <provider-calendar-component></provider-calendar-component>
+            </div>
+        </div>
+        </div>

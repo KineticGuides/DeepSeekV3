@@ -1,0 +1,35 @@
+<div class="sidebar-menu">
+    <div class="sidebarMenuScroll">
+      <ul>
+        <ng-container *ngFor="let m of data">
+            @if (m.menu_type=='menu') {
+              <li class="sidebar-dropdown">
+                <a style="cursor:pointer" (click)="toggleOpen(m)">
+                  <i class="{{ m.icon }}"></i>
+                  <span class="menu-text">
+                    {{ m.title }}
+                  </span>
+                </a>
+                @if (m.open=='Y') {
+                  <div class="sidebar-submen">
+                    <ul>
+                    <li *ngFor="let n of m.submenu">
+                      <a style="padding-left: 55px;;" [routerLink]="[n.link]">{{ n.title }}</a>
+                    </li>
+                  </ul>
+                  </div>
+                }
+              </li>
+            }
+            @if (m.menu_type=='item') {
+              <li>
+                <a style="cursor:pointer" [routerLink]="[m.link]">
+                  <i class="{{ m.icon }}"></i>
+                  <span class="menu-text">{{ m.title }}</span>
+                </a>
+              </li>
+            } 
+        </ng-container>
+      </ul>
+    </div>
+  </div>

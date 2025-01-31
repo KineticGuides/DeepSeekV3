@@ -1,0 +1,74 @@
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12 col-12">    
+          <div class="profile-header">
+            <h1>Welcome, {{ data.user.first_name }} - {{ current_practice }} - {{ model.year }}</h1>
+            <div class="profile-header-content">
+              <div class="profile-header-tiles">
+                <div class="row">
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-pentagon"></i>
+                      </span>
+                      <h6><span>
+                        <form class="row row-cols-sm-auto">
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <input
+                                        style="width:290px;"
+                                        class="form-control"
+                                        name="dp"
+                                        [(ngModel)]="model"
+                                        (ngModelChange)="changeDate()"
+                                        ngbDatepicker
+                                        #d="ngbDatepicker"
+                                    />
+                                    <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+                                </div>
+                            </div>
+                        </form></span></h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-pin-angle"></i>
+                      </span>
+                      <h6>
+                        <select class="form-control" (ngModelChange)="changePractice()" style="width: 360px!important" 
+                        name="practice" [(ngModel)]="current_practice">
+                            <option value="1">Reed Medical Group</option>
+                            <option value="2">Kinetic Seas</option>
+                            <option value="3">Innovation 360</option>
+                          </select>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-ile">
+                        <app-hey-skipper [rows]="'1'" [title]="'N'" [icons]="'N'" [button]="'N'"></app-hey-skipper>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+           <h1>{{ this.currentDate }}</h1>
+        </div>
+    </div>
+        <div class="row">
+            @if(booking=='Y') {
+            <div class="col-12">
+                <app-appointment-form  (close)="closeIt()" [id]="id" [start_date]="start_date" [end_time]="end_time" [resource_id]="resource_id" [patient_id]="patient_id" [practice_id]="practice"></app-appointment-form>
+            </div>
+        }
+            <div class="col-12">
+                <calendar-component (schedule)="scheduleEvent($event)" [currentDate]="currentDate"></calendar-component>
+            </div>
+        </div>
+        </div>
