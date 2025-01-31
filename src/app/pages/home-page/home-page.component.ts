@@ -18,6 +18,7 @@ import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.compo
 })
 export class HomePageComponent implements OnInit, AfterViewChecked {
 
+  @ViewChild('endofconversation') endofconversation!: ElementRef;
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
   data: any;
   message: any;
@@ -51,10 +52,17 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     }
   }
 
+  scrollToDiv() {
+    document.getElementById("endofconversation")!.scrollIntoView({ behavior: "smooth" });
+  }
+
   postForm(): void {
     let formData: any = { "message": this.message };
+    this.clearTextarea();
+
     this._dataService.postData("chat", formData).subscribe((data: any) => { 
       this.data = data;
+      setTimeout(() => this.scrollToDiv(), 500); 
     }); 
   }
 

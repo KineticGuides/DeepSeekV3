@@ -110,7 +110,9 @@
                         <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
                     </li>
                 </ul>
+                <div #endofconversation id="endofconversation"></div>
             </ng-container>
+            
         </div>
         </div>
       </div>
@@ -119,7 +121,7 @@
         <div class="col-12">
           <div class="bg-light p-3">
             <div class="input-group">
-              <textarea class="form-control" [(ngModel)]="message" rows="3" placeholder="Type your message..."></textarea>
+              <textarea id="prompt" class="form-control" [(ngModel)]="message" rows="3" placeholder="Type your message..."></textarea>
               <button (click)="postForm();" class="btn btn-primary" type="button">Submit</button>
               <button class="btn btn-secondary" type="button" (click)="clearTextarea()">Clear</button>
               <button (click)="newChat();" class="btn btn-info" type="button">New Conversation</button>
