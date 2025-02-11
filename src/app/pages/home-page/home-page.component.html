@@ -7,12 +7,12 @@
         <div class="profile-header-content">
           <div class="profile-header-tiles">
             <div class="row">
-              <div class="col-sm-4 col-12">
+              <div class="col-sm-8 col-12">
                 <div class="profile-tile">
                   <span class="icon">
                     <i class="bi bi-pentagon"></i>
                   </span>
-                  <h6>Model - <span>DeepSeek-V3</span></h6>
+                  <h6>Model - <span>ABBSI-AI - 8b:latest</span></h6>
                 </div>
               </div>
               <div class="col-sm-4 col-12">
@@ -20,15 +20,7 @@
                   <span class="icon">
                     <i class="bi bi-coin"></i>
                   </span>
-                  <h6>Parameters - <span>7 Billion</span></h6>
-                </div>
-              </div>
-              <div class="col-sm-4 col-12">
-                <div class="profile-tile">
-                  <span class="icon">
-                    <i class="bi bi-hash"></i>
-                  </span>
-                  <h6>Precision - <span>16 bit</span></h6>
+                  <h6>Parameters - <span>8 Billion</span></h6>
                 </div>
               </div>
             </div>
@@ -106,9 +98,10 @@
                             <img [src]="m.role == 'assistant' ? 'assets/images/user.png' : 'assets/images/user7.png'" alt="Admin Panel">
                             <div class="chats-name">{{ m.role == 'assistant' ? 'DeepSeek' : 'You' }}</div>
                         </div>
-                        <div class="chats-text">{{ m.content }}</div>
+                        <div class="chats-text" [innerHTML]="m.content"></div>
                         <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
                     </li>
+                    <div #endofconversation id="endofconversation"></div>
                 </ul>
             </ng-container>
         </div>
@@ -117,15 +110,18 @@
       <!-- Row end -->
       <div class="row fixed-bottom">
         <div class="col-12">
+          <textarea style="height:300px;" class="form-control" name="hello" [(ngModel)]="message"></textarea>
+        </div>
+<!--       <div class="col-12">
           <div class="bg-light p-3">
             <div class="input-group">
-              <textarea class="form-control" [(ngModel)]="message" rows="3" placeholder="Type your message..."></textarea>
+              <textarea id="prompt" class="form-control" [(ngModel)]="message" rows="3" placeholder="Type your message..."></textarea>
               <button (click)="postForm();" class="btn btn-primary" type="button">Submit</button>
               <button class="btn btn-secondary" type="button" (click)="clearTextarea()">Clear</button>
               <button (click)="newChat();" class="btn btn-info" type="button">New Conversation</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     </div>

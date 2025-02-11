@@ -25,10 +25,14 @@ export class DataService {
   current_practice: any;
 
   constructor(private http: HttpClient) { 
-    this.url='https://deepseek.kineticseas.com/api/ksa_router.php';
-    this.menu='https://deepseek.kineticseas.com/api/ksa_menu.php';
-    this.user='https://deepseek.kineticseas.com/api/ksa_user.php';
-    this.skipper='https://deepseek.kineticseas.com/api/kmd_skipper.php';
+//    this.url='https://deepseek.kineticseas.com/api/ksa_router.php';
+//    this.menu='https://deepseek.kineticseas.com/api/ksa_menu.php';
+//    this.user='https://deepseek.kineticseas.com/api/ksa_user.php';
+//    this.skipper='https://deepseek.kineticseas.com/api/kmd_skipper.php';
+    this.url='http://localhost:8888/ksa_router.php';
+    this.menu='http://localhost:8888/ksa_menu.php';
+    this.user='http://localhost:8888/ksa_user.php';
+    this.skipper='http://localhost:8888/kmd_skipper.php';
   }
 
   getLocalStorage() {

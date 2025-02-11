@@ -8,6 +8,7 @@ import { DataService } from '../../data.service';
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
 import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
+import { NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -18,6 +19,7 @@ import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.compo
 })
 export class HomePageComponent implements OnInit, AfterViewChecked {
 
+  @ViewChild('endofconversation') endofconversation!: ElementRef;
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
   data: any;
   message: any;
@@ -28,7 +30,8 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     private _activatedRoute: ActivatedRoute,
     private _dataService: DataService,
     private _router: Router,
-    public http: HttpClient  // used by upload
+    public http: HttpClient,
+    private zone: NgZone
 ) { }
 
   ngOnInit(): void {      
@@ -38,6 +41,35 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
           localStorage.setItem('chat_id', this.data['user']['chat_id']);
           localStorage.setItem('hash', this.data['user']['hash']);
       }); 
+  
+      const eventSource = new EventSource('http://localhost:8888/index.php');
+
+      eventSource.onmessage = (event) => {
+        this.zone.run(() => {
+          const trimmed = event.data.trim();
+          
+          if (trimmed=='[DONE]') {
+             eventSource.close();
+          }
+          if (trimmed.startsWith('data:')) {
+          const jsonPart = trimmed.substring('data:'.length).trim();
+          try {
+            const parsed = JSON.parse(jsonPart);
+            const content = parsed.choices[0].delta.content;
+            if (content!==undefined) {
+            console.log(content);
+            this.message+=content;
+            }
+          } catch (err) {
+
+          }
+          }
+        });
+      };
+
+  eventSource.onerror = (error) => {
+    console.error('EventSource failed:', error);
+  };
   }
 
   ngAfterViewChecked() {
@@ -51,10 +83,17 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     }
   }
 
+  scrollToDiv() {
+    document.getElementById("endofconversation")!.scrollIntoView({ behavior: "smooth" });
+  }
+
   postForm(): void {
     let formData: any = { "message": this.message };
+    this.clearTextarea();
+
     this._dataService.postData("chat", formData).subscribe((data: any) => { 
       this.data = data;
+      setTimeout(() => this.scrollToDiv(), 500); 
     }); 
   }
 
