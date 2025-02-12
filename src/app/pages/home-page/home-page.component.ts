@@ -18,13 +18,13 @@ import { NgZone } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit, AfterViewChecked {
-
   @ViewChild('endofconversation') endofconversation!: ElementRef;
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
   data: any;
-  message: any;
+  message: string = ''; // Initialize message as empty string
   localSession: any = '';
   currentChat: any = '';
+  messageQueue: string[] = [];  // Queue to store incoming text chunks
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -32,44 +32,44 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     private _router: Router,
     public http: HttpClient,
     private zone: NgZone
-) { }
+  ) { }
 
-  ngOnInit(): void {      
-      this._activatedRoute.data.subscribe(({ data }) => { 
-          this.data=data;
-          localStorage.setItem('uid', this.data['user']['id']);
-          localStorage.setItem('chat_id', this.data['user']['chat_id']);
-          localStorage.setItem('hash', this.data['user']['hash']);
-      }); 
-  
-      const eventSource = new EventSource('http://localhost:8888/index.php');
+  ngOnInit(): void {
+    this._activatedRoute.data.subscribe(({ data }) => { 
+      this.data = data;
+      localStorage.setItem('uid', this.data['user']['id']);
+      localStorage.setItem('chat_id', this.data['user']['chat_id']);
+      localStorage.setItem('hash', this.data['user']['hash']);
+    });
 
-      eventSource.onmessage = (event) => {
-        this.zone.run(() => {
-          const trimmed = event.data.trim();
-          
-          if (trimmed=='[DONE]') {
-             eventSource.close();
-          }
-          if (trimmed.startsWith('data:')) {
+    const eventSource = new EventSource('http://localhost:8888/index.php');
+
+    eventSource.onmessage = (event) => {
+      this.zone.run(() => {
+        const trimmed = event.data.trim();
+
+        if (trimmed == '[DONE]') {
+           eventSource.close();
+        }
+
+        if (trimmed.startsWith('data:')) {
           const jsonPart = trimmed.substring('data:'.length).trim();
           try {
             const parsed = JSON.parse(jsonPart);
             const content = parsed.choices[0].delta.content;
-            if (content!==undefined) {
-            console.log(content);
-            this.message+=content;
+            if (content !== undefined) {
+              this.enqueueMessage(content);  // Enqueue content for sequential typing
             }
           } catch (err) {
-
+            console.error('Error parsing JSON:', err); // Debugging log for error
           }
-          }
-        });
-      };
+        }
+      });
+    };
 
-  eventSource.onerror = (error) => {
-    console.error('EventSource failed:', error);
-  };
+    eventSource.onerror = (error) => {
+      console.error('EventSource failed:', error);
+    };
   }
 
   ngAfterViewChecked() {
@@ -89,12 +89,12 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
 
   postForm(): void {
     let formData: any = { "message": this.message };
-    this.clearTextarea();
+    this.clearTextarea(); // Clear message after sending
 
     this._dataService.postData("chat", formData).subscribe((data: any) => { 
       this.data = data;
       setTimeout(() => this.scrollToDiv(), 500); 
-    }); 
+    });
   }
 
   newChat(): void {
@@ -104,7 +104,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('uid', this.data['user']['id']);
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
-    }); 
+    });
   }
 
   switchChat(id: any): void {
@@ -114,11 +114,44 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('uid', this.data['user']['id']);
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
-    }); 
+    });
   }
 
   clearTextarea() {
     this.message = '';
   }
 
+  // Function to enqueue new message chunks
+  enqueueMessage(content: string): void {
+    this.messageQueue.push(content);
+    if (this.messageQueue.length === 1) {
+      this.typeNextMessage(); // Start typing the first message if it's the first one
+    }
+  }
+
+  // Function to process and animate text one chunk at a time
+  typeNextMessage(): void {
+    if (this.messageQueue.length > 0) {
+      const nextMessage = this.messageQueue[0]; // Get the first chunk
+      this.typeText(nextMessage, () => {
+        // After finishing typing one chunk, remove it from the queue
+        this.messageQueue.shift();
+        this.typeNextMessage(); // Process the next chunk if available
+      });
+    }
+  }
+
+  // Improved typing effect function
+  typeText(content: string, callback: () => void): void {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index < content.length) {
+        this.message += content.charAt(index); // Append one character at a time
+        index++;
+      } else {
+        clearInterval(typingInterval); // Stop typing when done
+        callback(); // Call the callback to continue with the next message
+      }
+    }, 25); // You can adjust this value to control the speed of the typing effect
+  }
 }

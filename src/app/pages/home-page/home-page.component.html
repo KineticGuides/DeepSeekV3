@@ -88,6 +88,7 @@
                   <img src="assets/images/user.png" alt="Admin Panel">
                   <div class="chats-name">DeepSeek</div>
                 </div>
+                <div #chatContainer class="chats-text form-control" style="min-height: 75px; overflow-y: hidden; width: auto;" [innerHTML]="message"></div>
                 <div class="chats-hour"> <span class="icon-done_all"></span></div>
               </li>
             </ul>
@@ -95,14 +96,16 @@
                 <ul class="chats">
                     <li *ngFor="let m of data.chat" [class.chats-left]="m.role=='assistant'" [class.chats-right]="m.role=='user'">
                         <div class="chats-avatar">
-                            <img [src]="m.role == 'assistant' ? 'assets/images/user.png' : 'assets/images/user7.png'" alt="Admin Panel">
+                            <img [src]="m.role == 'assistant' ? 'assets/images/user7.png' : 'assets/images/user.png'" alt="Admin Panel">
                             <div class="chats-name">{{ m.role == 'assistant' ? 'DeepSeek' : 'You' }}</div>
                         </div>
                         <div class="chats-text" [innerHTML]="m.content"></div>
                         <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
                     </li>
+                    
                     <div #endofconversation id="endofconversation"></div>
                 </ul>
+                
                 <div #endofconversation id="endofconversation"></div>
             </ng-container>
             
@@ -112,7 +115,7 @@
       <!-- Row end -->
       <div class="row fixed-bottom">
         <div class="col-12">
-          <textarea style="height:300px;" class="form-control" name="hello" [(ngModel)]="message"></textarea>
+          <!--textarea style="height:250px;" class="form-control" name="hello" [(ngModel)]="message"></textarea-->
         </div>
 <!--       <div class="col-12">
           <div class="bg-light p-3">
