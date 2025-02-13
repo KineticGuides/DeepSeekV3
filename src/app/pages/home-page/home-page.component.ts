@@ -92,7 +92,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
         if (trimmed == '[DONE]') {
            eventSource.close();
            this.clearTextarea();
-           this.getPage();
+           location.reload();
         }
 
         if (trimmed.startsWith('data:')) {

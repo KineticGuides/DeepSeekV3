@@ -33932,3 +33932,5113 @@ Decoded JSON: Array
 )
 
 JSON Decode Error: Syntax error
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5564ad69-6443-4af1-aafe-f3c3a96ddf4a
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => <think>
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6edb3827-2ac3-4e23-8672-e90983a67d89
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6d8661cc-72e4-4c9b-ba3f-5b2d21de5699
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Alright
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-454d9b6c-8067-4dde-a224-486774731952
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5bff9c38-a1e4-4568-bd64-592f68f125a3
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  the
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d67f1fc2-8e71-469f-abeb-cce1b1762932
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  user
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-03418f36-e200-4e8f-8e10-af9873236980
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  is
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a3b57cca-78eb-43d3-bc9e-32fe29d21ea7
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  asking
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-bdab62a5-7968-4b43-b8ee-6a31de6fc55c
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  about
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a15fd86d-9e3b-4128-ac84-99d9073aa2e9
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  "
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-16c51537-159b-4d4e-915c-8c463fe6867a
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => De
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-03eaa412-0c3c-447f-9535-4e3741d3de63
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2df835c1-13a5-4fc8-a4ea-100dcf16e8d7
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ca20768e-45b4-49e2-93d0-fa93f22cf25d
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ."
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ea396a7e-cb7a-442d-8264-986a0ecb25f6
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  That
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a1f8bd8d-ca77-4888-8222-7d8b1cc1c5b4
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  doesn
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-3100f839-b293-432a-91d8-687e8d91ea9e
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 't
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-765b9755-2ad4-4f1b-8aca-4e966a1912f5
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  sound
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-98af9797-4913-4ad6-a99d-eddc98e5f5a4
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  right
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0b43616f-a5f5-4e2f-bd74-da664ce56f11
+    [created] => 1739458757
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  at
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-69f02110-8709-4b28-8b2c-b1ff71aeb991
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  all
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-15be6272-3441-424a-9dae-92585c9bcf1b
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-62811a51-6c1e-42ab-b762-ffe895b5b637
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  It
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-edada292-2d53-4e2d-8550-5b1048263930
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  looks
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a95bea2a-3e49-410f-aa91-89775e63f7d0
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  like
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d0ca4b4a-7960-414d-8632-66e9624b3bae
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  they
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-420c63e8-f79d-4dbc-bb89-bb6763683d74
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  meant
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-768d5ed3-cb5d-4069-864b-f71ae7dc6862
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  to
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b907be99-7c76-4b71-9ac1-b18a82418989
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  ask
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-254ce7c1-0a89-49d6-af71-0c2d5f57d4ef
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  about
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4bf07048-fd64-4fb4-a0a2-f32111b4c9a0
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Deep
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7a687cdd-5681-4486-ad5f-8c5c7f140220
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-595710fd-ca66-484a-859d-8513509432b7
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7cd52d72-6bd2-46b6-93f9-550320ef6d72
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Deep
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-579bf118-6caa-4f24-a50b-88afef0483bf
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ee8d1866-36d6-4c49-8057-c248b1f2d5ed
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  is
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0784f679-e8a5-4319-993e-cabe03807f88
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  a
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-cb1c6f2b-416e-48a2-9bad-878a3f64a983
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  company
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-56a2b37b-7e88-4130-833e-34f2e7374927
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  based
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-80e3f518-ec1a-45d2-ba21-0a457f3f0946
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0b7dd3e0-5fad-4c0e-8baf-bdad28e3a7e3
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Gong
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7106bf89-db8b-47af-99d8-40205e38dcf1
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => sh
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a9c9543e-9fc0-4019-9714-92a2cf77989f
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => u
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-afe5e2cb-765f-44d8-82f9-388fefb49247
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-f08b68f4-86be-4c3a-aa24-3276ca1f5477
+    [created] => 1739458758
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Hang
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-61d34fb4-604b-492a-8b49-47ad779208ad
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => zhou
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-77d628b9-c7bc-4ea4-826c-718eb153eb9e
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0cdfa812-6a14-4afe-a801-33c480347aa9
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  China
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-66364cb0-41f7-45e4-921c-f8c92e1e9282
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4c9514a0-e208-423a-b99c-ec779bec6836
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  It
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d5e40894-beb2-4db3-8b15-0e638eb12cb8
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 's
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d2a7ce12-64a6-4fdb-9df4-608e772a491d
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  pretty
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0995b2bd-da09-47b0-81e1-4053f25530f9
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  famous
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d003fe42-9f83-4726-a131-734e6e0d6809
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  for
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0cf9339c-1230-447e-a275-536f49072759
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  AI
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-16c452ea-ba6c-4cc8-9da0-aff3ec0f6b1f
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  research
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6674af43-adc3-4e47-b8d6-9841bf72a5f4
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  and
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-dda3bb0a-f2e5-4145-bee8-0de251cfb4c6
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  technology
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b753441b-b4bc-48b2-a556-96c1ca350ccb
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d3010362-d7cd-451c-ba4f-9d253f7aa5d0
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Their
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-fdd6b731-c288-4960-bd55-1d7893a716e5
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  offices
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b27ec834-c67e-49a0-a34a-b7abf1d9b4d5
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  are
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2b81ed61-481b-41cd-834b-20e8596d60dd
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-18590558-ec59-4de7-82b2-6c00818c31c9
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Gong
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-196e6bb9-05a0-4b37-bdfd-7e8233aa7a96
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => sh
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-9855a61c-8046-4a64-add9-c7f5e4e7036b
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => u
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c0dda213-fc1c-4834-ae25-794380bb1800
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  District
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-79d6c2d7-da05-4d7c-b999-e20ed1b59e49
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-487ec3d2-07ec-4d65-a804-60c64c07047d
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  which
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-eb03b128-059a-41f3-af20-0001a71bdf7f
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  is
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-64fc10b2-b745-4748-9ded-0acd47161ec9
+    [created] => 1739458759
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  part
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-9f31b104-8bd2-4348-86d5-08f4b45aba3d
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  of
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a30aa449-0627-4b34-9149-3b1f3700963d
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Hang
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4f66dc9b-d4ad-4efc-9c3a-116d1182d875
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => zhou
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6650e1f8-43cc-48cb-8a7f-369c682b53d4
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-43d3066f-5628-4af7-8f64-1021d19bfaa4
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => They
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-3a67b6c0-0b89-442c-a106-c122b5f989e5
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  specialize
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-f2a7289b-0ece-4896-9f4b-d0ddc16a6c6a
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c77660f2-a55b-4063-a81a-0101a704e4a2
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  artificial
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-339c9f53-d7ec-4f17-a1cd-df7252f84e1f
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  intelligence
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-e21a6b65-80e2-40eb-8d50-639cbe51fd47
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d0452b78-7fa8-4ba7-ac8b-0d31b01d1838
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  focusing
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-02afc93c-b563-416b-a94e-c2dd1d388567
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  on
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b0323aa8-f12c-4dc4-a806-38acc114788f
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  things
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-76aa976e-9800-4179-a92e-78744b09a366
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  like
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-475c6677-55fc-4df2-a743-2ce090c624e1
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  robotics
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4d85602a-078c-450c-89cc-3b5903708fe2
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  and
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0eaf00ee-1ef6-4430-abad-3af665af0863
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  natural
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d57d3f49-bcef-4910-8bbd-e63764d16a7d
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  language
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d81f270a-5c5d-4e7c-b679-bdf76b5de82b
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  processing
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ef669191-ddf2-4691-b76f-28a532a7ac64
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-441f28bf-a2ef-4671-a1ee-e4db474b8fe0
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  So
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-cb6e385f-7e48-4f5f-b25c-ab39c5cbbfb1
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  if
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a1f78891-9e44-4eb1-ba3f-6ab9775cb415
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  the
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6c6741fd-96d8-4b23-9e41-ade469ae9ee0
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  user
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-064c66d4-312f-429a-a4d1-cd066cdd2d54
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  is
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-9946f624-986a-4fac-af4b-02d41eb2aab2
+    [created] => 1739458760
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  curious
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5ad21c36-1af9-4733-9e13-6b578be10618
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  about
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-aadd1120-e468-4c06-ad04-844263868406
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  their
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0e769334-aabd-48c9-be6b-f1e79e9f0d1a
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  location
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-03b12db6-35dd-4e7f-a332-46e809f66b63
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-9f2a3274-dceb-4452-b939-d351bb063f9a
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  that
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-843759c9-92dd-4686-82a5-8eac8e34780c
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 's
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d2e5fc54-7a7d-4af4-a396-5fef549a44cb
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  where
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-263f3f03-19ce-4f6f-ae15-06aabbd5f3b2
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  you
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d680efd0-bf5f-4f63-badd-829625dddd94
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 'd
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-328744fa-9781-4666-a280-3133549bb925
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  find
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-897ce618-4290-4d59-9d96-417a96d4e55d
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  it
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b658abdd-9ad9-409f-a85e-ad957cca6da6
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-1a7032f5-8af7-4d84-a562-f3257274dfbb
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => I
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-712af20c-b851-42f7-96d8-13722cec2e25
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  should
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-839eb96c-5e63-45f6-8e7f-78e5a2570ef6
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  make
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-fc99bac7-007f-402d-9460-1bba8f4398ad
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  sure
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-993cee33-941e-42a9-a3b8-5b1a16b21ba1
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  to
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-6d3683aa-fe67-42ba-9fff-e21a1c5d20e2
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  double
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-95851b3a-7a12-4233-a9ef-647631bb7afd
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => -check
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7e010569-e04a-4006-ab60-d09fbcd1b24a
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  this
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-bba320d9-ad6e-4c65-829e-4c2a53d290c8
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  info
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-bcb19b18-f1c8-4cbe-b50b-c9126fa48df3
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  just
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-165acd9e-f13c-4503-bd21-87a261528207
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  to
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2f4253d5-7015-4416-9520-7a80075289fa
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  be
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-aa55614f-d80f-4821-8e5a-3a2e30787f6b
+    [created] => 1739458761
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  sure
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b62d67a6-b1b3-4d6d-9ddd-8d8463a0a106
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  it
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-8a081f6a-4b66-4375-b8af-8199f07abf4d
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 's
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d561c43a-a5ff-4739-a0e7-4cdf231b4e98
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  up
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d5a8d157-566a-4bf7-9ed5-c9c61e43cb2e
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => -to
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-9e51b86b-1bea-4920-933c-9997b3785f19
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => -date
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-447c09f3-5428-47f0-9232-f254641b5345
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-679d8f59-0aa4-4fa4-9ae1-d5e64321554b
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Yep
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c875c83d-05fd-4b05-8bca-0f45b40b1d90
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-83f38f89-53ce-4e59-8a49-334a89f1b01c
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  everything
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7c7c5f91-5b4e-4980-a198-f205136959d5
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  matches
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c525a38e-dc26-46f7-ab33-5083ce72f95f
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  up
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b414da56-63b6-4dc8-b941-e1f910a6d103
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  with
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-67de5f7e-5295-42b1-8237-a282ff15f0fd
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  what
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5d8adb44-0b81-4b79-9b0b-698bb5adc797
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  I
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d6dc5669-8998-495c-a241-320aaccf8aec
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 've
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2ec6830d-14ba-47f4-acd0-072f30b9453f
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  seen
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4eb47dd7-8f6d-4d8d-a51d-b9437fdf7443
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-3052fbcf-0102-4f90-b794-b75fc5881500
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  so
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-47e48638-055e-479d-9a87-971010072362
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  I
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5856d99d-beb2-4799-95c3-3baffb506bc1
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  can
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-00d54dfe-af34-44da-bff5-d65e2ef1b980
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  confidently
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-8564a082-68cd-47a1-9e01-761fefc2937c
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  say
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-29c31b80-6891-4b38-91e7-d92b8a5e4de3
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  they
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a00701bc-cf76-4f81-9f32-9d89886610c6
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 're
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-97750fca-04bc-4d9c-bc0e-9e7c17f5ebf7
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  located
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-f63796a9-320b-418c-9bb8-bbc5acee83f8
+    [created] => 1739458762
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-17a6326c-3322-490f-bbc1-9a8e11a4bc40
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Gong
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a672c003-e7db-476b-af34-1c008cc13e3c
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => sh
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-fd79e13f-6ce5-4a7a-bf7d-0c11ee8bab52
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => u
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7adc7348-e01c-4341-9759-195fdb659d3a
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  District
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ab2ab454-43f1-483e-b14d-a749185f3e50
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a64ea466-f943-439b-a534-7558376d0320
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Hang
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-456b3c78-5fb6-45a2-8c60-108f38d10633
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => zhou
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2db7eb72-d455-4c93-aee2-85addca7c3e2
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d0bb38f2-9ea4-4d68-b4e3-0145a6ffb41a
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  China
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2b101e0d-32d2-44ad-956a-1eca884c4292
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-640f3111-6395-4b11-8f87-c302809e7548
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => </think>
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-26d05a2e-2ba8-46e9-b5ae-e75084f6f625
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 
+
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5b110afb-0ec7-4de9-96b2-6e870e38e8fc
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => De
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c3d11da3-e34d-46b3-9955-75909ac04400
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2604b4d8-aede-4a01-868e-3a3b3361dc25
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0147884b-494d-4ded-be09-53bcf0fa43fe
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  isn
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-53f9f437-8582-4b4f-9cd8-b193161d0a7f
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 't
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-fc538573-a935-44e1-a6ed-f497cf16a5d8
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  a
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-3a46b03f-c1a9-4cab-8676-e095c7bd377d
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  widely
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-940b87d3-934a-4f9a-9e5a-4bd61ed9d18b
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  recognized
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-3822c489-21be-4604-8f98-d4aec8ba08ae
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  name
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-c55068e3-dcad-4e40-bbd7-a9ce6924b53a
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ;
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-abb9f9bb-075c-4a9e-a30b-3583f4998430
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  it
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-469dc455-445e-4003-a006-93c35f640e02
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  seems
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-1075f4d5-5eca-4908-b0ec-71f344c88609
+    [created] => 1739458763
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  like
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-656adbee-d08f-42b7-b90f-fd3bed3c81b1
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  you
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-68961ea3-2c6b-4222-a6d9-1bd5527b4171
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  might
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-7470c10c-80b1-40af-917c-737bce0bcd0d
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  have
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-04d3f467-23e9-4509-b19b-8933273ee11b
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  meant
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-84147d0d-e276-4c6e-b91e-d3b26ec65ec1
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  "
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b0131aa8-da3b-449a-944f-8eb2d6813e1a
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Deep
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-17a3793f-95b2-4788-9601-c68e810f1c4a
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-679d1079-7433-43e6-b8dd-8d8dbf9c05b1
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ."
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2ac0f22d-a0bb-4191-b29b-e39b170a08a2
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Deep
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-4eb658c7-4e40-472d-a10a-97d18f5c9f3e
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => Seek
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-ba04d957-18f8-47ab-b98b-a57f9904fa59
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  is
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-0f8f8fa1-9afb-4264-94f3-1b2fc241a811
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  a
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-1e8f0d13-3ee6-40db-a58e-606cf8d0e83f
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  company
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a9d198f6-b5f2-4194-8c60-b335fa154408
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  based
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-21a6b2ad-954d-4596-b086-66ebc5b7f54f
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b141e8e2-831c-436f-be53-d04e6c89461b
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Gong
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a91aac78-31c2-4234-97e8-463d339b8d96
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => sh
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-76a41df0-4eb5-4558-9309-83dde8475039
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => u
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a4e80123-04e1-4015-b57f-841703f47c45
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  District
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-d685b5f3-fc93-4351-9a87-8269feb5e89e
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-cdc39740-6243-4072-afe0-cb486ee348b0
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  Hang
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b9e66759-a90e-4914-872a-ad1454d45c43
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => zhou
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-36a5da79-bcca-4e42-9564-486c876016c9
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => ,
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-10ce1ad3-e5dd-4052-a335-a55141bc2890
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  China
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-cfbd9c68-22b1-45e7-afce-89c2bb07bee6
+    [created] => 1739458764
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-b459bdf8-d3b6-494b-b742-0a9f01c35055
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  It
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a5653601-a50f-4aa4-88ad-ab27d5821e7f
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => 's
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-bddafa45-cf0b-4229-a5be-3f67423ad97a
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  known
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5b9aeb09-8975-400d-a371-8441a19b13e1
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  for
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-bb449d9f-ed24-4884-9eb1-a5bfaae3da1d
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  its
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-2dae55b1-1655-456d-a02e-dee44aab91a5
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  advancements
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-a21e1425-5883-4f54-95bb-07ecf5485cb6
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  in
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5b8b24c6-8415-49cc-8411-5b5f4deaf9a6
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  artificial
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-5a2fd87c-5b04-48f2-89b2-066691cc5e9d
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  intelligence
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-200b4f2f-4875-49b1-a795-034fca33da90
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  and
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-372e5d00-df51-45a4-8164-68109ce0f1d3
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  robotics
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-409c946d-34c5-479f-9468-1eebf5f80755
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] =>  research
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-dee8c65d-9ba4-4964-9e07-759f57a601e9
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => 
+                    [delta] => Array
+                        (
+                            [content] => .
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+)
+
+Decoded JSON: Array
+(
+    [id] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest-e4fe59b9-3c77-4c63-9934-84dcd8f91edd
+    [created] => 1739458765
+    [model] => hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [logprobs] => 
+                    [finish_reason] => stop
+                    [delta] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [object] => chat.completion.chunk
+    [usage] => Array
+        (
+            [response_token/s] => 25.63
+            [prompt_token/s] => 586.42
+            [total_duration] => 8959550375
+            [load_duration] => 38302042
+            [prompt_eval_count] => 380
+            [prompt_eval_duration] => 648000000
+            [eval_count] => 212
+            [eval_duration] => 8270000000
+            [approximate_total] => 0h0m8s
+        )
+
+)
+
+JSON Decode Error: Syntax error
