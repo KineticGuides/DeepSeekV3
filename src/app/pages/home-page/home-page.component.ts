@@ -42,7 +42,6 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
     });
-
   }
 
   ngAfterViewChecked() {
@@ -82,7 +81,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       hash=localStorage.getItem('hash')
     }
 
-    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash + '&message' + encodeURIComponent(this.message);
+    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash + '&prompt=' + encodeURIComponent(this.prompt);
 
     const eventSource = new EventSource(url);
 
@@ -93,6 +92,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
         if (trimmed == '[DONE]') {
            eventSource.close();
            this.clearTextarea();
+           this.getPage();
         }
 
         if (trimmed.startsWith('data:')) {
@@ -126,6 +126,14 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     });
   }
 
+  getPage(): void {
+    let formData: any = { "x": "" };
+    this._dataService.postData("get-home-page", formData).subscribe((data: any) => { 
+      this.data = data;
+      setTimeout(() => this.scrollToDiv(), 500); 
+    });
+  }
+
   newChat(): void {
     let formData: any = { "message": "" };
     this._dataService.postData("new-chat", formData).subscribe((data: any) => { 
@@ -147,7 +155,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
   }
 
   clearTextarea() {
-    this.message = '';
+    this.prompt = '';
   }
 
   // Function to enqueue new message chunks
@@ -175,12 +183,13 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     let index = 0;
     const typingInterval = setInterval(() => {
       if (index < content.length) {
-        this.message += content.charAt(index); // Append one character at a time
+        this.message += content.charAt(index) === '\n' ? '<br>' : content.charAt(index);
+        this.scrollToDiv(); 
         index++;
       } else {
         clearInterval(typingInterval); // Stop typing when done
         callback(); // Call the callback to continue with the next message
       }
-    }, 25); // You can adjust this value to control the speed of the typing effect
+    }, 2); // You can adjust this value to control the speed of the typing effect
   }
 }

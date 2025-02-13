@@ -74,17 +74,14 @@
             <div class="card-title">Chat</div>
           </div>
           <div class="card-body p-2">
-            <ul *ngIf="data.chat.length==0" class="chats">
-              <li class="chats-left">
-                <div class="chats-avatar">
-                  <img src="assets/images/user.png" alt="Admin Panel">
-                  <div class="chats-name">ABBSI-AI</div>
-                </div>
-                <div class="chats-text">Welcome to ABBSI-AI.  Ask me Something.</div>
-                <div class="chats-hour"> <span class="icon-done_all"></span></div>
-              </li>
-            </ul>
-            <ul class="chats">
+            <div class="chats-text">
+              This AI chat provides general medical information for reference only. Physicians must rely on their own clinical judgment, 
+              knowledge, and expertise when making medical decisions. This tool is not a substitute for professional evaluation, diagnosis, or treatment.
+            </div>
+            <div *ngIf="message.length==0&&data.chat.length==0" class="chats-text mt-3">
+              Please enter a question in the bottom chat window to begin or select an existing chat from the list.
+            </div>
+            <ul *ngIf="message.length>0||data.chat.length>0" class="chats">
                 <li *ngFor="let m of data.chat" [class.chats-left]="m.role=='assistant'" [class.chats-right]="m.role=='user'">
                     <div class="chats-avatar">
                         <img [src]="m.role == 'assistant' ? 'assets/images/user7.png' : 'assets/images/user.png'" alt="Admin Panel">
@@ -93,7 +90,7 @@
                     <div class="chats-text" [innerHTML]="m.content"></div>
                     <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
                 </li>
-                <li class="chats-left">
+                <li *ngIf="message.length > 0" class="chats-left">
                   <div class="chats-avatar">
                     <img src="assets/images/user.png" alt="Admin Panel">
                     <div class="chats-name">ABBSI-AI</div>
@@ -102,6 +99,7 @@
                   <div class="chats-hour"> <span class="icon-done_all"></span></div>
                 </li>
               </ul>
+              <br>&nbsp;<br>
                 <div #endofconversation id="endofconversation"></div>
         </div>
         </div>

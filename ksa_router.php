@@ -8,17 +8,17 @@ ignore_user_abort(1);
    header('Access-Control-Allow-Methods: GET,PUT,POST,DELETE,PATCH,OPTIONS');
    header('Content-type: application/json');
    require_once('class.KSDB.php');
-
+ 
    ini_set('max_execution_time', 0); 
    if (isset($_COOKIE['uid'])) { $uid=$_COOKIE['uid']; } else { $uid=55009; }
 
-   class KSA {
+class KSA {
     public $X;
     public $json;
     public $arr;
     function __construct() {
         $this->X=new PSDB();
-    }
+    } 
 
     function getUser($uid) {
         $data=array();
@@ -52,8 +52,6 @@ ignore_user_abort(1);
             $rs=$this->X->sql($sql);
             return $rs[0];
         }
-
-
     }
 
     function splitThinkTags($input) {
