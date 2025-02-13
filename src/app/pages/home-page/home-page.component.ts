@@ -26,7 +26,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
   localSession: any = '';
   currentChat: any = '';
   messageQueue: string[] = [];  
-  
+
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _dataService: DataService,
@@ -113,11 +113,6 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     eventSource.onerror = (error) => {
       console.error('EventSource failed:', error);
     };
-
-    this._dataService.postData("chat", formData).subscribe((data: any) => { 
-      this.data = data;
-      setTimeout(() => this.scrollToDiv(), 500); 
-    });
 
   }
 

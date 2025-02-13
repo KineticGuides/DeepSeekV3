@@ -84,17 +84,16 @@
                 <div class="chats-hour"> <span class="icon-done_all"></span></div>
               </li>
             </ul>
-            <ng-container *ngIf="data.chat.length>0">
-                <ul class="chats">
-                    <li *ngFor="let m of data.chat" [class.chats-left]="m.role=='assistant'" [class.chats-right]="m.role=='user'">
-                        <div class="chats-avatar">
-                            <img [src]="m.role == 'assistant' ? 'assets/images/user7.png' : 'assets/images/user.png'" alt="Admin Panel">
-                            <div class="chats-name">{{ m.role == 'assistant' ? 'ABBSI-AI' : 'You' }}</div>
-                        </div>
-                        <div class="chats-text" [innerHTML]="m.content"></div>
-                        <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
-                    </li>
-                <li *ngIf="message.length>0" class="chats-left">
+            <ul class="chats">
+                <li *ngFor="let m of data.chat" [class.chats-left]="m.role=='assistant'" [class.chats-right]="m.role=='user'">
+                    <div class="chats-avatar">
+                        <img [src]="m.role == 'assistant' ? 'assets/images/user7.png' : 'assets/images/user.png'" alt="Admin Panel">
+                        <div class="chats-name">{{ m.role == 'assistant' ? 'ABBSI-AI' : 'You' }}</div>
+                    </div>
+                    <div class="chats-text" [innerHTML]="m.content"></div>
+                    <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
+                </li>
+                <li class="chats-left">
                   <div class="chats-avatar">
                     <img src="assets/images/user.png" alt="Admin Panel">
                     <div class="chats-name">ABBSI-AI</div>
@@ -104,8 +103,6 @@
                 </li>
               </ul>
                 <div #endofconversation id="endofconversation"></div>
-            </ng-container>
-            
         </div>
         </div>
       </div>
