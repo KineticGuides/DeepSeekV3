@@ -72,14 +72,23 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmNTA2MDI4LWQ2M2QtNGJhMS1iODc0LTI0NDhkNDUxNGEzNSJ9.1V3BpWmP0vfsh6-5vykLjT34IAya0-YycFZOQymS_Mk',
 ]);
 $full_response="";
-$full_response = ""; // Ensure variable exists in outer scope
+$logFile = __DIR__ . '/debug.log'; 
+$full_response = "";
 
-curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) use (&$full_response) {
+curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) use (&$full_response, &$logFile) {
     if (isset($data)) {
         echo "data: " . trim($data) . "\n\n"; // Stream output
 
         // Try decoding JSON safely (handling possible malformed/incomplete chunks)
-        $jsonChunk = json_decode($data, true);
+
+        $jsonData = trim(preg_replace('/^data:\s*/', '', $data));
+        $jsonChunk = json_decode($jsonData, true);
+    
+        if ($jsonChunk === null) {
+         file_put_contents($logFile, "JSON Decode Error: " . json_last_error_msg() . "\n", FILE_APPEND);
+     } else {
+         file_put_contents($logFile, "Decoded JSON: " . print_r($jsonChunk, true) . "\n", FILE_APPEND);
+     }
 
         if (isset($jsonChunk['choices'][0]['delta']['content'])) {
             $full_response .= $jsonChunk['choices'][0]['delta']['content']; // Append new content
@@ -103,7 +112,7 @@ $post['table_name']="ds_chat";
 $post['chat_id']=$chat_id;
 $post['user_id']=$uid;
 $post['role']="assistant";
-$post['think']=$inside;
+$post['think']=$full_response;
 $post['content']=$outside;
 $X->post($post);
 
