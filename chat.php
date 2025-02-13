@@ -42,7 +42,6 @@ $post['think']="";
 $post['content']=$pr;
 $X->post($post);
 
-3: Query the conversation to add to the chat.
 $sql="select role, content from ds_chat where chat_id = " . $chat_id . " order by id";
 $prompt=$X->sql($sql);
 $msgs=array();
@@ -73,25 +72,23 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmNTA2MDI4LWQ2M2QtNGJhMS1iODc0LTI0NDhkNDUxNGEzNSJ9.1V3BpWmP0vfsh6-5vykLjT34IAya0-YycFZOQymS_Mk',
 ]);
 $full_response="";
-/*
-curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) {
-   if (isset($data)) {
-      echo "data: " . trim($data) . "\n\n";
-      //$full_response .= trim($data);
-      ob_flush();
-      flush();
-      return strlen($data);
-   }
-});
-*/
+$full_response = ""; // Ensure variable exists in outer scope
+
 curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) use (&$full_response) {
-   if (isset($data)) {
-   echo "data: " . trim($data) . "\n\n"; // Stream output
-   $full_response .= trim($data); // Append data to full_response
-   ob_flush();
-   flush();
-   return strlen($data);
-   }
+    if (isset($data)) {
+        echo "data: " . trim($data) . "\n\n"; // Stream output
+
+        // Try decoding JSON safely (handling possible malformed/incomplete chunks)
+        $jsonChunk = json_decode($data, true);
+
+        if (isset($jsonChunk['choices'][0]['delta']['content'])) {
+            $full_response .= $jsonChunk['choices'][0]['delta']['content']; // Append new content
+        }
+
+        ob_flush();
+        flush();
+        return strlen($data);
+    }
 });
 
 curl_exec($ch);
