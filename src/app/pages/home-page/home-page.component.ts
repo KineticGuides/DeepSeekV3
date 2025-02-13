@@ -42,34 +42,6 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('hash', this.data['user']['hash']);
     });
 
-    const eventSource = new EventSource('http://localhost:8888/index.php');
-
-    eventSource.onmessage = (event) => {
-      this.zone.run(() => {
-        const trimmed = event.data.trim();
-
-        if (trimmed == '[DONE]') {
-           eventSource.close();
-        }
-
-        if (trimmed.startsWith('data:')) {
-          const jsonPart = trimmed.substring('data:'.length).trim();
-          try {
-            const parsed = JSON.parse(jsonPart);
-            const content = parsed.choices[0].delta.content;
-            if (content !== undefined) {
-              this.enqueueMessage(content);  // Enqueue content for sequential typing
-            }
-          } catch (err) {
-            console.error('Error parsing JSON:', err); // Debugging log for error
-          }
-        }
-      });
-    };
-
-    eventSource.onerror = (error) => {
-      console.error('EventSource failed:', error);
-    };
   }
 
   ngAfterViewChecked() {
@@ -85,6 +57,67 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
 
   scrollToDiv() {
     document.getElementById("endofconversation")!.scrollIntoView({ behavior: "smooth" });
+  }
+
+  postChat(): void {
+    let formData: any = { "message": this.message };
+    let uid: any = "0";
+    let chat_id: any = "0";
+    let hash: any = '';
+
+    if (localStorage.getItem('uid')===null) {
+      uid="0";
+    } else {
+      uid=localStorage.getItem('uid')
+    }
+    if (localStorage.getItem('chat_id')===null) {
+      chat_id="0";
+    } else {
+      chat_id=localStorage.getItem('chat_id')
+    }
+    if (localStorage.getItem('hash')===null) {
+      hash="";
+    } else {
+      hash=localStorage.getItem('hash')
+    }
+
+    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash;
+
+    const eventSource = new EventSource(url);
+
+    eventSource.onmessage = (event) => {
+      this.zone.run(() => {
+        const trimmed = event.data.trim();
+
+        if (trimmed == '[DONE]') {
+           eventSource.close();
+           this.clearTextarea();
+        }
+
+        if (trimmed.startsWith('data:')) {
+          const jsonPart = trimmed.substring('data:'.length).trim();
+          try {
+            const parsed = JSON.parse(jsonPart);
+            const content = parsed.choices[0].delta.content;
+            if (content !== undefined) {
+              this.enqueueMessage(content);  // Enqueue content for sequential typing
+            }
+          } catch (err) {
+
+          }
+        }
+      });
+    };
+
+    eventSource.onerror = (error) => {
+      console.error('EventSource failed:', error);
+    };
+
+    this._dataService.postData("chat", formData).subscribe((data: any) => { 
+      this.data = data;
+      setTimeout(() => this.scrollToDiv(), 500); 
+    });
+
   }
 
   postForm(): void {

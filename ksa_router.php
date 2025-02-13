@@ -271,7 +271,8 @@ ignore_user_abort(1);
 
     $data = file_get_contents("php://input");
     $data = json_decode($data, TRUE);
-    $data['uid']="1";
+    $data['uid']="151";
+    $data['chat_id']="0";
     $output=array();
 
     $A=new KSA();
