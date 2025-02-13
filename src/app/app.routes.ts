@@ -58,6 +58,6 @@ export const routes: Routes = [
     { path: 'appts', component: ApptListComponent, resolve: { data: ResolverService} },
     { path: 'members', component: MemberListComponent, resolve: { data: ResolverService} },
     { path: 'resources', component: ResourceListComponent, resolve: { data: ResolverService} },
-    { path: 'shareholder-dashboard/:id', component: ShareholderDashboardComponent, resolve: { data: ResolverService} },
+    { path: 'member-dashboard/:id', component: ShareholderDashboardComponent, resolve: { data: ResolverService} },
     { path: 'template-list', component: TemplateListComponent, resolve: { data: ResolverService}  }
 ];

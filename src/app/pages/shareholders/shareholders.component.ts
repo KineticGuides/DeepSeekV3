@@ -10,11 +10,13 @@ import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
 import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { SearchFilterPipe } from '../../search-filter.pipe';
+import { MemberFormComponent } from '../crud/member/member-form/member-form.component';
+import { AddMemberFormComponent } from "../../forms/add-member-form/add-member-form.component";
 
 @Component({
   selector: 'app-shareholders',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, SearchFilterPipe, NgxPaginationModule],
+  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, SearchFilterPipe, NgxPaginationModule, MemberFormComponent, AddMemberFormComponent],
   templateUrl: './shareholders.component.html',
   styleUrl: './shareholders.component.css'
 })
@@ -24,6 +26,8 @@ export class ShareholdersComponent  implements OnInit {
   message: any;
   searchText: string = '';
   p: any = 1;
+  showing: string = 'N';
+
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -39,6 +43,15 @@ export class ShareholdersComponent  implements OnInit {
           this.data=data;
       }) 
   }
+
+  toggleThoughts() {
+    if (this.showing=='N') {
+      this.showing='Y'
+    } else {
+      this.showing='N';
+    }
+
+}
 
   switchUserGeneral(m: any): void { 
     let formData: any = { "member_id": m.id }

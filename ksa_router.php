@@ -296,6 +296,32 @@ class KSA {
 
     }
 
+    function postAddMember($data) {
+        $post=$data['formData'];
+        $post['table_name']="ds_member";
+        $post['member_name']=$post['last_name'] . ", " . $post['first_name'];
+        $id=$this->X->post($post);
+        $output=array();
+        $output['id']=$id;
+        return $id;
+    }
+
+    function getAddMemberForm($data) {
+        $output=array();
+        $formData=array();
+        $formData['first_name']="";
+        $formData['last_name']="";
+        $formData['address']="";
+        $formData['city']="";
+        $formData['state']="";
+        $formData['zip']="";
+        $formData['dob']="";
+        $formData['phone']="";
+        $formData['email']="";
+        $output['formData']=$formData;
+        return $output;
+    }
+
     function getConversations($uid, $model) {
         $sql="select active_member from ds_user where id = " . $uid;
         $rs=$this->X->sql($sql);
@@ -344,6 +370,23 @@ class KSA {
         return $output;
    }
 
+   function getMemberDashboard($data) {
+    $member_id=$data['id'];
+
+    $output=array();
+    $uid=$data['uid'];
+    $output['user']=$this->getUser($uid);
+
+    $sql="select * from ds_member where id = " .  $member_id;
+    $rs=$this->X->sql($sql);
+    $output['member']=$rs[0];
+
+    $sql="select * from ds_convo where member_id = " . $member_id . " order by id desc";
+    $rs=$this->X->sql($sql);
+    $output['convo']=$rs;
+    return $output;
+}
+
     }
 
     $A=new KSA();
@@ -389,12 +432,21 @@ class KSA {
             case 'edit-convo':
                     $output=$A->postEditConvo($data);
                     break;
+            case 'post-add-member':
+                    $output=$A->postAddMember($data);
+                    break;
             case 'members':
                     $output=$A->getMemberList($data);
                     break;
            case 'new-chat':
                      $output=$A->doNewChat($data);
                      break;
+            case 'add-member-form':
+                    $output=$A->getAddMemberForm($data);
+                    break;
+            case 'member-dashboard':
+                    $output=$A->getMemberDashboard($data);
+                    break;
             case 'delete-one-chat':
                     $output=$A->deleteOneChat($data);
                     break;

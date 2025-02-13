@@ -3,34 +3,33 @@
         <div class="col-sm-12 col-12">
     
           <div class="profile-header">
-            <h1 style="font-size: 18px;">Welcome, {{ data.user.first_name }}</h1>
+            <h1 style="font-size: 18px;">Welcome, Guest</h1>
             <div class="profile-header-content">
               <div class="profile-header-tiles">
                 <div class="row">
-                  <div class="col-sm-4 col-12">
+                  <div class="col-sm-6 col-12">
                     <div class="profile-tile">
                       <span class="icon">
                         <i class="bi bi-pentagon"></i>
                       </span>
-                      <h6>Company - <span>{{ data.company.company_name }}</span></h6>
+                      <div class="row" style="width:100%">
+                        <div class="col-8 pt-2">
+                          <h6>Member - <span>{{ data!.member.member_name}}</span> </h6>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                          <button [routerLink]="['/members']" class="btn btn-primary">Change Member</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-4 col-12">
+ <!--                 <div class="col-sm-6 col-12">
                     <div class="profile-tile">
                       <span class="icon">
                         <i class="bi bi-coin"></i>
                       </span>
-                      <h6>Symbol - <span>{{ data.company.symbol }}</span></h6>
+                      <h6>Current Chat: <span>{{ data!.current_chat.title}} ({{ data!.current_chat.create_timestamp }})</span> </h6>
                     </div>
-                  </div>
-                  <div class="col-sm-4 col-12">
-                    <div class="profile-tile">
-                      <span class="icon">
-                        <i class="bi bi-hash"></i>
-                      </span>
-                      <h6>CIK - <span>{{ data.company.cik }}</span></h6>
-                    </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="profile-avatar-tile">
@@ -50,7 +49,10 @@
                           <i class="bi bi-house"></i>
                           <a [routerLink]="['/']">Home</a>
                         </li>
-                        <li class="breadcrumb-item">Shareholder Dashboard</li>
+                        <li class="breadcrumb-item">
+                          <a [routerLink]="['/members']">Member List</a>
+                        </li>
+                        <li class="breadcrumb-item">Member Dashboard</li>
                       </ol>
                 </div>
             </div>
@@ -59,19 +61,17 @@
           <div class="card m-2 p-3">
             <div class="row">
               <div class="col-8">
-                <h2 style="font-size:24px;">{{ data.formData['first_name'] }} {{ data.formData['last_name'] }}</h2>
-                <h3 style="font-size:20px;">CIK: {{ data.formData['cik'] }}</h3>
+                <h2 style="font-size:24px;">{{ data.member['first_name'] }} {{ data.member['last_name'] }}</h2>
               </div>
               <div class="col-4" style="text-align: right">
-                <button class="btn btn-secondary m-2">Update Filings</button>                
-                <button class="btn btn-secondary m-2">Upload Documents</button>
+                <button class="btn btn-secondary m-2">Edit Member Profile</button>                
               </div>
             </div>
             <div class="row">
               <div class="col-8">
-                826 Seers Drive<br>
-                Schaumburg, IL 60173-3694
-                Postal Verified: Yes
+                {{ data.member['last_name']}}, {{ data.member['first_name'] }}<br>
+                {{ data.member['address'] }}<br>
+                {{ data.member['city'] }}, {{ data.member['state'] }} {{ data.member['zip'] }}
               </div>
           </div>
     
@@ -80,51 +80,62 @@
               <div class="col-6">
                 <div class="card">
                   <div class="header shade-primary">
-                   <h3 style="font-size:18px; color: white;" class="m-3">Current Positions</h3>
+                   <h3 style="font-size:18px; color: white;" class="m-3">Current Protocols</h3>
                   </div>
                   <div class="card-body">
                       <div class="table-responsive">
                           <table class="table m-0">
                             <thead>
                               <tr>
-                                <th>Series</th>
-                                <th>Location</th>
-                                <th style="text-align: right;">Shares</th>
-                                <th style="text-align: right;">Last Date</th>
-                                <th>Other</th>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Notes</th>
+                                <th></th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Common</td>
-                                <td>Transfer Agent</td>
-                                <td style="text-align: right;">1,945,000</td>
-                                <td style="text-align: right;">01/19/2025</td>
-                                <td style="text-align: right;"></td>
+                                <td>12/01/25</td>
+                                <td>Premium Longevity</td>
+                                <td></td>
                                <td style="text-align: right;"><button class="btn"><div class="icon">
                                 <a>
                                   <i class="bi bi-clipboard-data"></i>
                                 </a>
                               </div></button></td>
                               </tr>
+                            </tbody>
+                            <tfoot>
                               <tr>
-                                <td>Preferred A</td>
-                                <td>Transfer Agent</td>
-                                <td style="text-align: right;">500</td>
-                                <td style="text-align: right;">01/19/2025</td>
-                                <td style="text-align: right;"></td>
-                               <td style="text-align: right;"><button class="btn"><div class="icon">
-                                <a>
-                                  <i class="bi bi-clipboard-data"></i>
-                                </a>
-                              </div></button></td>
+                                <td colspan="5" class="text-center">
+     <!--                             <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+    </td> 
                               </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="header shade-primary">
+                   <h3 style="font-size:18px; color: white;" class="m-3">Current Medications</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table m-0">
+                            <thead>
                               <tr>
-                                <td>Common</td>
-                                <td>NOBO</td>
-                                <td style="text-align: right;">214</td>
-                                <td style="text-align: right;">01/19/2025</td>
-                                <td style="text-align: right;">Maybe E*Trade</td>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Notes</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12/01/25</td>
+                                <td>Metformin (4000)</td>
+                                <td></td>
                                <td style="text-align: right;"><button class="btn"><div class="icon">
                                 <a>
                                   <i class="bi bi-clipboard-data"></i>
@@ -147,77 +158,30 @@
               <div class="col-6">
                 <div class="card">
                   <div class="header shade-primary">
-                   <h3 style="font-size:18px; color: white;" class="m-3">Activity</h3>
+                   <h3 style="font-size:18px; color: white;" class="m-3">AI Chats</h3>
                   </div>
                   <div class="card-body">
                       <div class="table-responsive">
                           <table class="table m-0">
                             <thead>
                               <tr>
-                                <th>Series</th>
-                                <th>Action</th>
-                                <th style="text-align: right;">Shares</th>
-                                <th style="text-align: right;">Date</th>
-                                <th>Other</th>
+                                <th>Date</th>
+                                <th>Model</th>
+                                <th>Summary</th>
+                                <th></th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>Common</td>
-                                <td>Transfer Common to Preferred A</td>
-                                <td style="text-align: right;">-500,000</td>
-                                <td style="text-align: right;">01/19/2025</td>
+                                <td>General</td>
+                                <td></td>
                                <td style="text-align: right;"><button class="btn"><div class="icon">
                                 <a>
                                   <i class="bi bi-clipboard-data"></i>
                                 </a>
                               </div></button></td>
                               </tr>
-                              <tr>
-                                <td>Preferred A</td>
-                                <td>Transfer Common to Preferred A</td>
-                                <td style="text-align: right;">+500</td>
-                                <td style="text-align: right;">01/19/2025</td>
-                               <td style="text-align: right;"><button class="btn"><div class="icon">
-                                <a>
-                                  <i class="bi bi-clipboard-data"></i>
-                                </a>
-                              </div></button></td>
-                              </tr>
-                              <tr>
-                                <td>Common</td>
-                                <td>Transfer Preferred A to Common</td>
-                                <td style="text-align: right;">-2,450,000</td>
-                                <td style="text-align: right;">01/12/2025</td>
-                               <td style="text-align: right;"><button class="btn"><div class="icon">
-                                <a>
-                                  <i class="bi bi-clipboard-data"></i>
-                                </a>
-                              </div></button></td>
-                              </tr>
-                              <tr>
-                                <td>Preferred A</td>
-                                <td>Transfer Preferred A to Common</td>
-                                <td style="text-align: right;">-2,450,000</td>
-                                <td style="text-align: right;">01/12/2025</td>
-                               <td style="text-align: right;"><button class="btn"><div class="icon">
-                                <a>
-                                  <i class="bi bi-clipboard-data"></i>
-                                </a>
-                              </div></button></td>
-                              </tr>
-                              <tr>
-                                <td>Common</td>
-                                <td>Share Purchase</td>
-                                <td style="text-align: right;">2,450,000</td>
-                                <td style="text-align: right;">12/14/2023</td>
-                               <td style="text-align: right;"><button class="btn"><div class="icon">
-                                <a>
-                                  <i class="bi bi-clipboard-data"></i>
-                                </a>
-                              </div></button></td>
-                              </tr>
-
                             </tbody>
                             <tfoot>
                               <tr>
