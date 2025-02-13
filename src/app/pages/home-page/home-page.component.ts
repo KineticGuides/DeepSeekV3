@@ -21,11 +21,12 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
   @ViewChild('endofconversation') endofconversation!: ElementRef;
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
   data: any;
-  message: string = ''; // Initialize message as empty string
+  message: string = ''; 
+  prompt: string = '';
   localSession: any = '';
   currentChat: any = '';
-  messageQueue: string[] = [];  // Queue to store incoming text chunks
-
+  messageQueue: string[] = [];  
+  
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _dataService: DataService,
@@ -81,7 +82,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       hash=localStorage.getItem('hash')
     }
 
-    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash;
+    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash + '&message' + encodeURIComponent(this.message);
 
     const eventSource = new EventSource(url);
 
