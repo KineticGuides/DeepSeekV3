@@ -40,6 +40,14 @@ export class ShareholdersComponent  implements OnInit {
       }) 
   }
 
+  switchUserGeneral(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/home']);
+  }) 
+
+  }
+
   postForm(): void {
   
     let formData: any = { "message": this.message }

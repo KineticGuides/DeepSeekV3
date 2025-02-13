@@ -23,6 +23,7 @@ export class DataService {
   current_patient: any;
   current_day: any;
   current_practice: any;
+  member_id: any;
 
   constructor(private http: HttpClient) { 
 //    this.url='https://deepseek.kineticseas.com/api/ksa_router.php';
@@ -51,7 +52,11 @@ export class DataService {
     } else {
       this.hash=localStorage.getItem('hash')
     }
-
+    if (localStorage.getItem('member_id')===null) {
+      this.member_id="";
+    } else {
+      this.member_id=localStorage.getItem('member_id')
+    }
   }
 
 
@@ -63,7 +68,8 @@ export class DataService {
       "id2": id2,
       "id3": id3,
       "hash": this.hash, 
-      "chat_id": this.chat_id,      
+      "chat_id": this.chat_id,           
+      "member_id": this.member_id,      
       "uid": this.uid
     }
   

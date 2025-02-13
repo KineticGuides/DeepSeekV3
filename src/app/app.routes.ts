@@ -38,7 +38,7 @@ export const routes: Routes = [
     { path: '', component: HomePageComponent, resolve: { data: ResolverService} },
     { path: 'home', component: HomePageComponent, resolve: { data: ResolverService} },
     { path: 'participants', component: ParticipantsComponent, resolve: { data: ResolverService}  },
-    { path: 'shareholders', component: ShareholdersComponent, resolve: { data: ResolverService} },
+    { path: 'members', component: ShareholdersComponent, resolve: { data: ResolverService} },
     { path: 'analytics', component: AnalyticsComponent, resolve: { data: ResolverService} },
     { path: 'insights', component: InsightsComponent, resolve: { data: ResolverService} },
     { path: 'documents', component: DocumentsComponent, resolve: { data: ResolverService} },

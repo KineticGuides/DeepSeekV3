@@ -74,24 +74,30 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
 $full_response="";
 $logFile = __DIR__ . '/debug.log'; 
 $full_response = "";
-
-curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) use (&$full_response, &$logFile) {
+$thinking=0;
+curl_setopt($ch, CURLOPT_WRITEFUNCTION, function ($ch, $data) use (&$full_response, &$logFile, &$thinking) {
     if (isset($data)) {
-        echo "data: " . trim($data) . "\n\n"; // Stream output
 
         // Try decoding JSON safely (handling possible malformed/incomplete chunks)
 
         $jsonData = trim(preg_replace('/^data:\s*/', '', $data));
         $jsonChunk = json_decode($jsonData, true);
     
-        if ($jsonChunk === null) {
-         file_put_contents($logFile, "JSON Decode Error: " . json_last_error_msg() . "\n", FILE_APPEND);
-     } else {
-         file_put_contents($logFile, "Decoded JSON: " . print_r($jsonChunk, true) . "\n", FILE_APPEND);
-     }
-
         if (isset($jsonChunk['choices'][0]['delta']['content'])) {
             $full_response .= $jsonChunk['choices'][0]['delta']['content']; // Append new content
+        }
+
+        if (strpos($full_response, '<think>') !== false) {
+           if (strpos($full_response, '</think>') === false) {
+              echo "data: " . trim($data) . "\n\n";
+              file_put_contents($logFile, "data: " . trim($data) . "\n", FILE_APPEND);
+           } else {
+            echo "data: " . trim($data) . "\n\n"; 
+            file_put_contents($logFile, "data: " . trim($data) . "\n", FILE_APPEND);
+           }          
+        } else {
+         file_put_contents($logFile, "data0: " . trim($data) . "\n", FILE_APPEND);
+         echo "data: " . trim($data) . "\n\n"; 
         }
 
         ob_flush();
@@ -112,7 +118,7 @@ $post['table_name']="ds_chat";
 $post['chat_id']=$chat_id;
 $post['user_id']=$uid;
 $post['role']="assistant";
-$post['think']=$full_response;
+$post['think']=$inside;
 $post['content']=$outside;
 $X->post($post);
 

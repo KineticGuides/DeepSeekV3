@@ -23,16 +23,6 @@ class KSA {
     function getUser($uid) {
         $data=array();
 
- //       if ($uid==0) {
- //           $post=array();
- //           $post['action']="insert";
- //           $post['table_name']="ds_user";
- //           $uid=$this->X->post($post);
- //           $post['id']=$uid;
- //           $post['hash']=substr(hash('sha256',"X" . $post['id']),0,20);
- //           $this->X->post($post);
- //       }
-
         $sql="select * from ds_user where id = " . $uid;
         $rs=$this->X->sql($sql);
         if (sizeof($rs)>0) {
@@ -78,20 +68,47 @@ class KSA {
         foreach($rs as $r) {
             $r['content']=$this->convertToHtml($r['content']);
             $r['think']=$this->convertToHtml($r['think']);
+            $r['showing']='N';
             array_push($output,$r);
         }
         return $output;
     }
 
+    function getMemberList($data) {
+
+        $sql="select * from ds_member order by member_name";
+        $rs=$this->X->sql($sql);
+        $o=array();
+        foreach($rs as $r) {
+            $sql="select count(*) as c from ds_convo where archived = 'N' and member_id = " . $r['id'];
+            $rs2=$this->X->sql($sql);
+            $r['general']=$rs2[0]['c'];
+            array_push($o,$r);
+        }
+
+        $output=array();
+        $output['list']=$o;
+        $user=array();
+        $user['first_name']="Guest";
+        $output['user']=$user;
+        return $output;
+
+    }
+
     function newChat($data) {
 
         $this->clearChat();
+        $sql="select active_member from ds_user where id = " . $data['uid'];
+        $rs=$this->X->sql($sql);
+        $member_id=$rs[0]['active_member'];  
 
         // Create a new Convo
         $post=array();
         $post['table_name']="ds_convo";
         $post['action']="insert";
         $post['user_id']=$data['uid'];
+        $post['member_id']=$member_id;
+        $post['model']="general";
         $post['title']="New Chat";
         $id=$this->X->post($post);
 
@@ -106,11 +123,44 @@ class KSA {
 
     }
 
+    function switchMember($data) {
+
+        $this->clearChat();
+        $post=array();
+        $post['table_name']="ds_user";
+        $post['action']="insert";
+        $post['id']=$data['uid'];
+        $post['chat_id']="0";
+        $post['active_member']=$data['formData']['member_id'];
+        $id=$this->X->post($post);
+        $output=array();
+        $output['member_id']=$id;
+        return $output;
+
+    }
+
      function doNewChat($data) {
          $chat_id=$this->newChat($data);
          $data['chat_id']=$chat_id;
          return $this->getHomePage($data);
      }
+
+     function deleteOneChat($data) {
+        $sql="delete from ds_chat where id = " . $data['formData']['id'];
+        $this->X->execute($sql);
+        return $this->getHomePage($data);
+    }
+    function archiveOneConvo($data) {
+        $sql="update ds_convo set archived = 'Y' where id = " . $data['formData']['id'];
+        $this->X->execute($sql);
+        return $this->getHomePage($data);
+    }
+
+    function postEditConvo($data) {
+        $sql="update ds_convo set title = '" . $data['formData']['title'] . "' where id = " . $data['formData']['id'];
+        $this->X->execute($sql);
+        return $this->getHomePage($data);
+    }
 
      function switchChat($data) {
          $chat_id=$data['formData']['id'];
@@ -246,18 +296,50 @@ class KSA {
 
     }
 
-    function getConversations($uid) {
-        //$data['id']=$this->getUser($uid);
-        $sql="select * from ds_convo where user_id = " . $uid . " order by id";
+    function getConversations($uid, $model) {
+        $sql="select active_member from ds_user where id = " . $uid;
         $rs=$this->X->sql($sql);
-        return $rs;
+        $member_id=$rs[0]['active_member'];  
+
+        $sql="select * from ds_convo where archived = 'N' and model = '" . $model . "' and member_id = " . $member_id . " order by id";
+        $rs=$this->X->sql($sql);
+        $t=array();
+        foreach($rs as $r) {
+            $r['editing']="N";
+            array_push($t,$r);
+        }
+        return $t;
     }
 
     function getHomePage($data) {
         $output=array();
         $uid=$data['uid'];
         $output['user']=$this->getUser($uid);
-        $output['convo']=$this->getConversations($uid);
+
+        $sql="select * from ds_member where id = " .  $output['user']['active_member'];
+        $rs=$this->X->sql($sql);
+
+        if (sizeof($rs)==0) {
+            $member=array();
+            $member['id']=0;
+            $member['member_name']="Member Not Selected";
+            array_push($rs,$member);
+        }
+        $output['member']=$rs[0];
+
+        $sql="select * from ds_convo where id = " .  $output['user']['chat_id'];
+        $rs=$this->X->sql($sql);
+
+        if (sizeof($rs)==0) {
+            $current_chat=array();
+            $current_chat['id']=0;
+            $current_chat['title']="Chat Not Started";
+            array_push($rs,$current_chat);
+        }
+        $output['current_chat']=$rs[0];
+
+        
+        $output['convo']=$this->getConversations($uid,"general");
         $output['chat']=$this->getChat($data['chat_id']);
         return $output;
    }
@@ -301,9 +383,24 @@ class KSA {
            case 'chat':
                      $output=$A->doChat($data);
                      break;
+            case 'switch-member':
+                    $output=$A->switchMember($data);
+                    break;
+            case 'edit-convo':
+                    $output=$A->postEditConvo($data);
+                    break;
+            case 'members':
+                    $output=$A->getMemberList($data);
+                    break;
            case 'new-chat':
                      $output=$A->doNewChat($data);
                      break;
+            case 'delete-one-chat':
+                    $output=$A->deleteOneChat($data);
+                    break;
+            case 'archive-one-convo':
+                    $output=$A->archiveOneConvo($data);
+                    break;
            case 'switch-chat':
                      $output=$A->switchChat($data);
                      break;

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit, AfterViewChecked, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnDestroy, OnInit, AfterViewChecked, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule, RouterLink } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { FormsModule,  FormGroup, FormControl, Validators } from '@angular/forms';
@@ -17,15 +17,21 @@ import { NgZone } from '@angular/core';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent implements OnInit, AfterViewChecked {
+export class HomePageComponent implements OnInit, AfterViewInit, AfterViewChecked {
   @ViewChild('endofconversation') endofconversation!: ElementRef;
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
   data: any;
   message: string = ''; 
+  thinking: any = 'N';
+  first_thinking: any = 'N';
   prompt: string = '';
   localSession: any = '';
   currentChat: any = '';
   messageQueue: string[] = [];  
+  fullMessage: string = '';
+  working: string = 'N';
+  title: string = '';
+
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -41,11 +47,17 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('uid', this.data['user']['id']);
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
+      this.scrollToDiv();
+      this.scrollToBottom();
     });
   }
 
+  ngAfterViewInit(): void {
+    this.scrollToBottom();
+    this.scrollToDiv();    
+  }
   ngAfterViewChecked() {
-    console.log("view checked")
+ //   console.log("view checked")
     this.scrollToBottom();
   }
 
@@ -65,6 +77,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     let chat_id: any = "0";
     let hash: any = '';
 
+    this.working='Y';
     if (localStorage.getItem('uid')===null) {
       uid="0";
     } else {
@@ -94,8 +107,9 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
            this.clearTextarea();
            location.reload();
         }
-
+        console.log(trimmed);
         if (trimmed.startsWith('data:')) {
+          this.thinking = 'N';
           const jsonPart = trimmed.substring('data:'.length).trim();
           try {
             const parsed = JSON.parse(jsonPart);
@@ -126,7 +140,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     });
   }
 
-  getPage(): void {
+  getPage0(): void {
     let formData: any = { "x": "" };
     this._dataService.postData("get-home-page", formData).subscribe((data: any) => { 
       this.data = data;
@@ -134,13 +148,51 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     });
   }
 
+  getPage(): void {
+    let formData: any = { "x": "" };
+    this._dataService.postData("get-home-page", formData).subscribe((newData: any) => { 
+        // Preserve editing state before overwriting data
+        const editingMap = new Map(this.data.convo.map((c: any) => [c.id, c.editing]));
+
+        // Assign new data
+        this.data = newData;
+
+        // Restore editing states
+        this.data.convo.forEach((c: any) => {
+            if (editingMap.has(c.id)) {
+                c.editing = editingMap.get(c.id);
+            }
+        });
+
+        setTimeout(() => this.scrollToDiv(), 50);
+        setTimeout(() => this.scrollToBottom(), 50);
+    });
+}
+
+
+  toggleThoughts(m: any) {
+      if (m.showing=='N') {
+        m.showing='Y'
+      } else {
+        m.showing='N';
+      }
+  
+  }
+
+  hasUnclosedThinkTag(text: string): boolean {
+    const thinkOpenTagCount = (text.match(/<think>/g) || []).length;
+    const thinkCloseTagCount = (text.match(/<\/think>/g) || []).length;
+    return thinkOpenTagCount > thinkCloseTagCount;
+}
+
   newChat(): void {
-    let formData: any = { "message": "" };
+    let formData: any = { "model": "general" };
     this._dataService.postData("new-chat", formData).subscribe((data: any) => { 
       this.data = data;
       localStorage.setItem('uid', this.data['user']['id']);
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
+      setTimeout(() => this.scrollToDiv(), 500);
     });
   }
 
@@ -151,8 +203,54 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
       localStorage.setItem('uid', this.data['user']['id']);
       localStorage.setItem('chat_id', this.data['user']['chat_id']);
       localStorage.setItem('hash', this.data['user']['hash']);
+      setTimeout(() => this.scrollToDiv(), 500);
     });
   }
+
+  deleteOneChat(m: any): void {
+    if (confirm("Are you sure you want to delete this prompt or response?")) {
+    let formData: any = { "id": m.id };
+    this._dataService.postData("delete-one-chat", formData).subscribe((data: any) => { 
+      this.data = data;
+      localStorage.setItem('uid', this.data['user']['id']);
+      localStorage.setItem('chat_id', this.data['user']['chat_id']);
+      localStorage.setItem('hash', this.data['user']['hash']);
+    });
+  }
+  }
+
+  archiveConvo(m: any): void {
+    if (confirm("Are you sure you want to archive this conversation?")) {
+    let formData: any = { "id": m.id };
+    this._dataService.postData("archive-one-convo", formData).subscribe((data: any) => { 
+      this.data = data;
+      localStorage.setItem('uid', this.data['user']['id']);
+      localStorage.setItem('chat_id', this.data['user']['chat_id']);
+      localStorage.setItem('hash', this.data['user']['hash']);
+    });
+  }
+  }
+
+  postEditConvo(m: any): void {
+    console.log("Saving:", m.title);
+    
+    // Call API to save the updated title
+    let formData = { id: m.id, title: m.title };
+
+    this._dataService.postData("edit-convo", formData).subscribe((data: any) => { 
+      m.editing = 'N'; 
+      this.data = data;
+      setTimeout(() => this.scrollToDiv(), 500); 
+    });
+
+}
+
+  editConvo(m: any): void {
+    console.log("Before:", m.editing);
+    m.editing = m.editing === 'Y' ? 'N' : 'Y'; // Toggle between 'N' and 'Y'
+    this.data.convo = [...this.data.convo]; // Ensure Angular detects the change
+    console.log("After:", m.editing);
+}
 
   clearTextarea() {
     this.prompt = '';
@@ -183,6 +281,7 @@ export class HomePageComponent implements OnInit, AfterViewChecked {
     let index = 0;
     const typingInterval = setInterval(() => {
       if (index < content.length) {
+        this.fullMessage += content.charAt(index) === '\n' ? '<br>' : content.charAt(index);
         this.message += content.charAt(index) === '\n' ? '<br>' : content.charAt(index);
         this.scrollToDiv(); 
         index++;
