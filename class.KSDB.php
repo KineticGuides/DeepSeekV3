@@ -7,7 +7,7 @@ protected $db;
 
 
 function connect() {
-$this->dbh = new PDO("mysql:host=localhost;dbname=shareanalysis;charset=utf8", 'root', 'root');
+$this->dbh = new PDO("mysql:host=localhost;dbname=abbsi_ai;charset=utf8", 'root', 'root');
         $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $this->dbh;
 }

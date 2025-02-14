@@ -53,11 +53,17 @@
               <span class="menu-text">Members</span>
             </a>
           </li>
+          <li>
+            <a [routerLink]="['/members']">
+              <i class="bi bi-people"></i>
+              <span class="menu-text">Admin</span>
+            </a>
+          </li>
           <li> 
             <li>
             <a href="#">
               <i class="bi bi-door-open"></i>
-              <span (click)="logout()" class="menu-text">Clear Session</span>
+              <span (click)="logout()" class="menu-text">Logout</span>
             </a>
           </li>
         </ul>

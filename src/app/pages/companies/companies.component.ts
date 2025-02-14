@@ -7,12 +7,11 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 
 @Component({
   selector: 'app-companies',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent],
+  imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './companies.component.html',
   styleUrl: './companies.component.css'
 })

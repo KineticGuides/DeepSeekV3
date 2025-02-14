@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { NgbAlertModule, NgbDatepickerModule, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap'
 import { JsonPipe } from '@angular/common';
 
@@ -15,7 +14,7 @@ import { JsonPipe } from '@angular/common';
 @Component({
   selector: 'app-single-resource-calendar',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, CalendarModule, ProviderCalendarModule, NgbAlertModule, NgbDatepickerModule],
+  imports: [CommonModule, RouterLink, FormsModule, CalendarModule, ProviderCalendarModule, NgbAlertModule, NgbDatepickerModule],
   templateUrl: './single-resource-calendar.component.html',
   styleUrl: './single-resource-calendar.component.css'
 })

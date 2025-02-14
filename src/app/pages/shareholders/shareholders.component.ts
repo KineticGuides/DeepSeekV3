@@ -8,7 +8,6 @@ import { DataService } from '../../data.service';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { SearchFilterPipe } from '../../search-filter.pipe';
 import { MemberFormComponent } from '../crud/member/member-form/member-form.component';
 import { AddMemberFormComponent } from "../../forms/add-member-form/add-member-form.component";
@@ -16,7 +15,7 @@ import { AddMemberFormComponent } from "../../forms/add-member-form/add-member-f
 @Component({
   selector: 'app-shareholders',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, SearchFilterPipe, NgxPaginationModule, MemberFormComponent, AddMemberFormComponent],
+  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule, MemberFormComponent, AddMemberFormComponent],
   templateUrl: './shareholders.component.html',
   styleUrl: './shareholders.component.css'
 })

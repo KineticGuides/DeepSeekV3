@@ -11,14 +11,14 @@
 
     function getUser($uid) {
         $data=array();
-        $sql="select * from ds_user where id = " . $uid;
+        $sql="select * from abbsi_user where id = " . $uid;
         $rs=$this->X->sql($sql);
         if (sizeof($rs)>0) {
             return $rs[0];
         } else {
             $post=array();
             $post['action']="insert";
-            $post['table_name']="ds_user";
+            $post['table_name']="abbsi_user";
             $uid=$this->X->post($post);
             $post['id']=$uid;
             $post['hash']=substr(hash('sha256',"X" . $post['id']),0,20);
@@ -26,7 +26,7 @@
             $data['uid']=$uid;
             $post['chat_id']=$this->newChat($data);
             $this->X->post($post);
-            $sql="select * from ds_user where id = " . $uid;
+            $sql="select * from abbsi_user where id = " . $uid;
             $rs=$this->X->sql($sql);
             return $rs[0];
         }
@@ -48,7 +48,7 @@
         ];
     }
     function getChat($chat_id) {
-        $sql="select * from ds_chat where chat_id = " . $chat_id . " order by id";
+        $sql="select * from abbsi_chat where chat_id = " . $chat_id . " order by id";
         $rs=$this->X->sql($sql);
         $output=array();
         foreach($rs as $r) {
@@ -65,7 +65,7 @@
 
         // Create a new Convo
         $post=array();
-        $post['table_name']="ds_convo";
+        $post['table_name']="abbsi_convo";
         $post['action']="insert";
         $post['user_id']=$data['uid'];
         $post['title']="New Chat";
@@ -73,7 +73,7 @@
 
         // Update the Userx
         $post=array();
-        $post['table_name']="ds_user";
+        $post['table_name']="abbsi_user";
         $post['action']="insert";
         $post['id']=$data['uid'];
         $post['chat_id']=$id;
@@ -91,7 +91,7 @@
      function switchChat($data) {
          $chat_id=$data['formData']['id'];
          $post=array();
-         $post['table_name']="ds_user";
+         $post['table_name']="abbsi_user";
          $post['action']="insert";
          $post['id']=$data['uid'];
          $post['chat_id']=$chat_id;
@@ -142,7 +142,7 @@
 //        array_push($files,$file);
 
         $post=array();
-        $post['table_name']="ds_chat";
+        $post['table_name']="abbsi_chat";
         $post['chat_id']=$chat_id;
         $post['user_id']=$uid;
         $post['role']="user";
@@ -150,7 +150,7 @@
         $post['content']=$pr;
         $this->X->post($post);
 
-        $sql="select role, content from ds_chat where chat_id = " . $chat_id . " order by id";
+        $sql="select role, content from abbsi_chat where chat_id = " . $chat_id . " order by id";
         $prompt=$this->X->sql($sql);
         $msgs=array();
         foreach($prompt as $y) {

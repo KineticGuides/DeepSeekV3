@@ -5,15 +5,12 @@ import { Subject, takeUntil } from 'rxjs';
 import { FormsModule,  FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
-import { CalendarModule } from '../../calendar/calendar.module';
-import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent],
+  imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
@@ -31,7 +28,6 @@ export class HomePageComponent implements OnInit, AfterViewInit, AfterViewChecke
   fullMessage: string = '';
   working: string = 'N';
   title: string = '';
-
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -94,7 +90,7 @@ export class HomePageComponent implements OnInit, AfterViewInit, AfterViewChecke
       hash=localStorage.getItem('hash')
     }
 
-    let url: any = 'http://localhost:8888/chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash + '&prompt=' + encodeURIComponent(this.prompt);
+    let url: any = 'http://localhost:8888/abbsi_general_chat.php?uid=' + uid + '&chat_id=' + chat_id + '&hash=' + hash + '&prompt=' + encodeURIComponent(this.prompt);
 
     const eventSource = new EventSource(url);
 
@@ -105,7 +101,7 @@ export class HomePageComponent implements OnInit, AfterViewInit, AfterViewChecke
         if (trimmed == '[DONE]') {
            eventSource.close();
            this.clearTextarea();
-           location.reload();
+   //        location.reload();
         }
         console.log(trimmed);
         if (trimmed.startsWith('data:')) {

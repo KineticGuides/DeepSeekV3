@@ -8,14 +8,13 @@ import { DataService } from '../../data.service';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { SearchFilterPipe } from '../../search-filter.pipe';
 
 
 @Component({
   selector: 'app-member-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, SearchFilterPipe, NgxPaginationModule],
+  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule],
   templateUrl: './member-list.component.html',
   styleUrl: './member-list.component.css'
 })

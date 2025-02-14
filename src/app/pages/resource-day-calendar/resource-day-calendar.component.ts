@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { NgbAlertModule, NgbDatepickerModule, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap'
 import { JsonPipe } from '@angular/common';
 import { AppointmentFormComponent } from '../appointment-form/appointment-form.component';
@@ -17,7 +16,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-resource-day-calendar',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, CalendarModule, ProviderCalendarModule, NgbAlertModule, 
+  imports: [CommonModule, RouterLink, FormsModule, CalendarModule, ProviderCalendarModule, NgbAlertModule, 
     NgbDatepickerModule, AppointmentFormComponent],
   templateUrl: './resource-day-calendar.component.html',
   styleUrl: './resource-day-calendar.component.css'
@@ -126,18 +125,6 @@ changeDate() {
     this.end_time = data.end.value;
     this.booking='Y';
     console.log(data)
-  }
-
-postForm(): void {
-  
-    let formData: any = { "message": this.message }
-
-    this._dataService.postSkipper("hey-skipper", formData).subscribe((data: any)=> { 
-      console.log(data.location)
-      this._router.navigate([data.location]);
-      console.log(this.data)
-  }) 
-
   }
 
 

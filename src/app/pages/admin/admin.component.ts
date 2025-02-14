@@ -7,14 +7,13 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 import { UploadNoboComponent } from '../../widgets/upload-nobo/upload-nobo.component';
 import { UploadTAComponent } from '../../widgets/upload-ta/upload-ta.component';
 import { UploadDTCComponent } from '../../widgets/upload-dtc/upload-dtc.component';
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent, UploadNoboComponent, UploadTAComponent, UploadDTCComponent],
+  imports: [CommonModule, RouterLink, FormsModule, UploadNoboComponent, UploadTAComponent, UploadDTCComponent],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })

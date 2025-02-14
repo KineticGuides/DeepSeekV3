@@ -7,12 +7,11 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../../data.service'; 
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
-import { HeySkipperComponent } from '../../widgets/hey-skipper/hey-skipper.component';
 
 @Component({
   selector: 'app-shareholder-dashboard',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, HeySkipperComponent],
+  imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './shareholder-dashboard.component.html',
   styleUrl: './shareholder-dashboard.component.css'
 })

@@ -24,25 +24,19 @@ import { SingleResourceCalendarComponent } from './pages/single-resource-calenda
 import { ApptListComponent } from './pages/crud/appt/appt-list/appt-list.component';
 import { ParticipantsComponent } from './pages/participants/participants.component';
 import { ShareholdersComponent } from './pages/shareholders/shareholders.component';
-import { AnalyticsComponent } from './pages/analytics/analytics.component';
-import { InsightsComponent } from './pages/insights/insights.component';
-import { DocumentsComponent } from './pages/documents/documents.component';
-import { FilingsComponent } from './pages/filings/filings.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { CompaniesComponent } from './pages/companies/companies.component';
 import { CompanySetupComponent } from './pages/company-setup/company-setup.component';
 import { ShareholderDashboardComponent } from './dashboards/shareholder-dashboard/shareholder-dashboard.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 export const routes: Routes = [
     { path: '', component: HomePageComponent, resolve: { data: ResolverService} },
     { path: 'home', component: HomePageComponent, resolve: { data: ResolverService} },
+    { path: 'login', component: LoginPageComponent, resolve: { data: ResolverService} },
     { path: 'participants', component: ParticipantsComponent, resolve: { data: ResolverService}  },
     { path: 'members', component: ShareholdersComponent, resolve: { data: ResolverService} },
-    { path: 'analytics', component: AnalyticsComponent, resolve: { data: ResolverService} },
-    { path: 'insights', component: InsightsComponent, resolve: { data: ResolverService} },
-    { path: 'documents', component: DocumentsComponent, resolve: { data: ResolverService} },
-    { path: 'filings', component: FilingsComponent, resolve: { data: ResolverService} },
     { path: 'admin', component: AdminComponent, resolve: { data: ResolverService} },
     { path: 'settings', component: SettingsComponent, resolve: { data: ResolverService} },
     { path: 'companies', component: CompaniesComponent, resolve: { data: ResolverService} },

@@ -75,7 +75,7 @@
      
                   </div>
                   <div class="m-2" *ngIf="showing=='Y'">
-                    <app-add-member-form></app-add-member-form>
+                    <app-add-member-form (close)="toggleThoughts();"></app-add-member-form>
                   </div>
                   <div class="card-body">
                     <div class="row mb-3">

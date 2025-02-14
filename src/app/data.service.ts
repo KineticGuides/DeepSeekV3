@@ -26,14 +26,9 @@ export class DataService {
   member_id: any;
 
   constructor(private http: HttpClient) { 
-//    this.url='https://deepseek.kineticseas.com/api/ksa_router.php';
-//    this.menu='https://deepseek.kineticseas.com/api/ksa_menu.php';
-//    this.user='https://deepseek.kineticseas.com/api/ksa_user.php';
-//    this.skipper='https://deepseek.kineticseas.com/api/kmd_skipper.php';
-    this.url='http://localhost:8888/ksa_router.php';
-    this.menu='http://localhost:8888/ksa_menu.php';
-    this.user='http://localhost:8888/ksa_user.php';
-    this.skipper='http://localhost:8888/kmd_skipper.php';
+    this.url='http://localhost:8888/abbsi_router.php';
+    this.menu='http://localhost:8888/abbsi_menu.php';
+    this.user='http://localhost:8888/abbsi_user.php';
   }
 
   getLocalStorage() {
@@ -115,21 +110,6 @@ export class DataService {
   return this.t;
 
   }
-
-  postSkipper(path: any, formData: any) {
- 
-    this.getLocalStorage();
-    const data = {
-      "q" : path,
-      "formData": formData,
-      "chat_id": this.chat_id,
-      "hash": this.hash,    
-      "uid": this.uid
-    }
-    this.t= this.http.post(this.skipper, data);
-    return this.t;
-  }
-
 
 }
 
