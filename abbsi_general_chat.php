@@ -17,7 +17,7 @@ $chat_id=$_GET['chat_id'];
 $hash=$_GET['hash'];
 $pr=$_GET['prompt'];
 
-$X=new PSDB();
+$X=new PSDB();    
 $A=new ABBSI();
 
 $bearer="";
