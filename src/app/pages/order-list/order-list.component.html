@@ -1,0 +1,147 @@
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12 col-12">
+    
+          <div class="profile-header">
+            <h1 style="font-size: 18px;">Welcome, {{ data.user.first_name }}</h1>
+            <div class="profile-header-content">
+              <div class="profile-header-tiles">
+                <div class="row">
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-pentagon"></i>
+                      </span>
+                      <h6><span>ABSI-AI Version 0.9b</span></h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-coin"></i>
+                      </span>
+                      <h6><span>Model - ABBSI-R1-GENERAL-MEDICAL-8B</span></h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-hash"></i>
+                      </span>
+                      <h6><span>Last Update: 02/13/25</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-avatar-tile">
+                <img src="assets/images/user.png" class="img-fluid" alt="Bootstrap Gallery" />
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <!-- Row end -->
+    
+      <!-- Row start -->
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-12">
+          <!-- Row start -->
+          <div class="row">
+            <div class="col-sm-6 col-12">
+            </div>
+         <div class="col-sm-12 col-12">
+    
+            </div> 
+          </div>
+          <!-- Row end -->
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12">
+          <!-- Row start -->
+          <div class="row">
+            <div class="col-sm-12 col-12">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="header shade-primary">
+                      <div class="row">
+                        <div class="col-10">
+                          <h3 style="font-size:18px; color: white;" class="m-3">Orders</h3>
+                        </div>
+                        <div class="col-2">
+                          <h3 style="font-size:18px; color: white;" class="mt-2"><button class="btn btn-primary" (click)="toggleThoughts()">Create Order</button></h3>
+                        </div>
+                      </div>
+       
+                    </div>
+                    <div class="m-2" *ngIf="showing=='Y'">
+                      <app-order-form (close)="toggleThoughts();"></app-order-form>
+                    </div>
+                    <div class="card-body">
+                      <div class="row mb-3">
+                        <div class="col-sm-4 col-12">
+                              <div class="m-0">
+                                <label class="form-label">Search</label>
+                                <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
+                              </div>
+                            </div>
+                      </div>
+                        <div class="table-responsive">
+                            <div class="mb-2">
+                                <div class="table-responsive">
+                                  <table class="table truncate table-bordered align-middle">
+                                    <thead>
+                                      <tr>
+                                        <td width="250px">Customer</td>
+                                        <td width="250px">Email</td>
+                                        <td width="100px">Order Date</td>
+                                        <td width="100px">Phone</td>
+                                        <td width="100px">Amount</td>
+                                        <td width="100px">Payment Date</td>
+                                        <td width="100px">Shipment Date</td>
+                                        <td width="100px">Status</td>
+                                        <td>Actions</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="media-box">
+                                            <img src="assets/images/user.png" class="media-avatar" alt="Bootstrap Gallery">
+                                            <div class="media-box-body">
+                                              <div class="text-truncate">Felicia Quinn</div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>info_example.com</td>
+                                        <td>30 mins ago</td>
+                                        <td>000-000-0000</td>
+                                        <td>$250.00</td>
+                                        <td>22/10/2023</td>
+                                        <td>22/12/2023</td>
+                                        <td>
+                                          <span class="badge bg-success">Paid</span>
+                                        </td>
+                                        <td>
+                                          <button class="btn btn-primary disabled">Request</button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-12">
+            </div>
+          </div>
+          <!-- Row end -->
+        </div>
+        </div>
+        </div>

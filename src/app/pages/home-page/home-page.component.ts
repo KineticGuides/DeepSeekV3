@@ -101,7 +101,7 @@ export class HomePageComponent implements OnInit, AfterViewInit, AfterViewChecke
         if (trimmed == '[DONE]') {
            eventSource.close();
            this.clearTextarea();
-   //        location.reload();
+          //  location.reload();
         }
         console.log(trimmed);
         if (trimmed.startsWith('data:')) {

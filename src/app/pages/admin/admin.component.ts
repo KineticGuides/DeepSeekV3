@@ -10,10 +10,11 @@ import { ProviderCalendarModule } from '../../provider-calendar/provider-calenda
 import { UploadNoboComponent } from '../../widgets/upload-nobo/upload-nobo.component';
 import { UploadTAComponent } from '../../widgets/upload-ta/upload-ta.component';
 import { UploadDTCComponent } from '../../widgets/upload-dtc/upload-dtc.component';
+import { AddUserFormComponent } from '../../forms/add-user-form/add-user-form.component';
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, UploadNoboComponent, UploadTAComponent, UploadDTCComponent],
+  imports: [CommonModule, RouterLink, FormsModule, UploadNoboComponent, UploadTAComponent, UploadDTCComponent, AddUserFormComponent],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
@@ -21,6 +22,7 @@ export class AdminComponent  implements OnInit {
 
   data: any;
   message: any;
+  showing: any = 'N';
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -34,8 +36,18 @@ export class AdminComponent  implements OnInit {
       this._activatedRoute.data.subscribe(({ 
           data })=> { 
           this.data=data;
+          console.log(this.data);
       }) 
   }
+
+  toggleThoughts() {
+    if (this.showing=='N') {
+      this.showing='Y'
+    } else {
+      this.showing='N';
+    }
+
+}
 
   postForm(): void {
   

@@ -80,11 +80,29 @@ class KSA {
         $rs=$this->X->sql($sql);
         $o=array();
         foreach($rs as $r) {
-            $sql="select count(*) as c from abbsi_convo where archived = 'N' and member_id = " . $r['id'];
+            $sql="select count(*) as c from abbsi_convo where program='general' and archived = 'N' and member_id = " . $r['id'];
             $rs2=$this->X->sql($sql);
             $r['general']=$rs2[0]['c'];
+
+            $sql="select count(*) as c from abbsi_convo where program='longevity' and archived = 'N' and member_id = " . $r['id'];
+            $rs2=$this->X->sql($sql);
+            $r['longevity']=$rs2[0]['c'];
+
+            $sql="select count(*) as c from abbsi_convo where program='dietexercise' and archived = 'N' and member_id = " . $r['id'];
+            $rs2=$this->X->sql($sql);
+            $r['diet']=$rs2[0]['c'];
+
+            $sql="select count(*) as c from abbsi_convo where program='skincare' and archived = 'N' and member_id = " . $r['id'];
+            $rs2=$this->X->sql($sql);
+            $r['skincare']=$rs2[0]['c'];
+
             array_push($o,$r);
         }
+
+        foreach($rs as $r) {
+
+        }
+
 
         $output=array();
         $output['list']=$o;
@@ -108,7 +126,7 @@ class KSA {
         $post['action']="insert";
         $post['user_id']=$data['uid'];
         $post['member_id']=$member_id;
-        $post['model']="general";
+        $post['program']="general";
         $post['title']="New Chat";
         $id=$this->X->post($post);
 
@@ -175,8 +193,8 @@ class KSA {
      }
 
      function convertToHtml($text) {
-    $text = htmlspecialchars_decode($text, ENT_QUOTES);
-    $text = nl2br($text);
+//    $text = htmlspecialchars_decode($text, ENT_QUOTES);
+//    $text = nl2br($text);
 
     return $text;
     }
@@ -200,6 +218,8 @@ class KSA {
 //        echo $response;
 
      }
+
+     /*
 
      function doChat($data) {
         $pr=$data['formData']['message'];
@@ -295,7 +315,7 @@ class KSA {
         return $this->getHomePage($d);
 
     }
-
+*/
     function postAddMember($data) {
         $post=$data['formData'];
         $post['table_name']="abbsi_member";
@@ -304,6 +324,38 @@ class KSA {
         $output=array();
         $output['id']=$id;
         return $id;
+    }
+
+    function postAddMarker($data) {
+        $post=$data['formData'];
+        $post['table_name']="abbsi_marker";
+        $id=$this->X->post($post);
+        $output=array();
+        $output['id']=$id;
+        return $id;
+    }
+
+    function postAddUser($data) {
+        $post=$data['formData'];
+        $post['table_name']="abbsi_user";
+        $id=$this->X->post($post);
+        $output=array();
+        $output['id']=$id;
+        return $id;
+    }
+
+    function getAddUserForm($data) {
+        $output=array();
+        $formData=array();
+        $formData['username']="";
+        $formData['first_name']="";
+        $formData['last_name']="";
+        $formData['role']="";
+        $formData['phone']="";
+        $formData['email']="";
+        $formData['pwd']="";
+        $output['formData']=$formData;
+        return $output;
     }
 
     function getAddMemberForm($data) {
@@ -318,6 +370,18 @@ class KSA {
         $formData['dob']="";
         $formData['phone']="";
         $formData['email']="";
+        $output['formData']=$formData;
+        return $output;
+    }
+
+    function getAddMarkerForm($data) {
+        $output=array();
+        $formData=array();
+        $formData['marker_code']="";	
+        $formData['marker_name']="";	
+        $formData['units']="";	
+        $formData['data_type']="";	
+        $formData['note']="";			
         $output['formData']=$formData;
         return $output;
     }
@@ -348,12 +412,12 @@ class KSA {
         return $output;
     }
 
-    function getConversations($uid, $model) {
+    function getConversations($uid, $program) {
         $sql="select active_member from abbsi_user where id = " . $uid;
         $rs=$this->X->sql($sql);
         $member_id=$rs[0]['active_member'];  
 
-        $sql="select * from abbsi_convo where archived = 'N' and model = '" . $model . "' and member_id = " . $member_id . " order by id";
+        $sql="select * from abbsi_convo where archived = 'N' and program = '" . $program . "' and member_id = " . $member_id . " order by id";
         $rs=$this->X->sql($sql);
         $t=array();
         foreach($rs as $r) {
@@ -364,6 +428,7 @@ class KSA {
     }
 
     function getHomePage($data) {
+        $program=$data['program'];
         $output=array();
         $uid=$data['uid'];
         $output['user']=$this->getUser($uid);
@@ -379,7 +444,7 @@ class KSA {
         }
         $output['member']=$rs[0];
 
-        $sql="select * from abbsi_convo where id = " .  $output['user']['chat_id'];
+        $sql="select * from abbsi_convo where program = '" .$program . "' and id = " .  $output['user']['chat_id'];
         $rs=$this->X->sql($sql);
 
         if (sizeof($rs)==0) {
@@ -391,9 +456,33 @@ class KSA {
         $output['current_chat']=$rs[0];
 
         
-        $output['convo']=$this->getConversations($uid,"general");
+        $output['convo']=$this->getConversations($uid,$program);
         $output['chat']=$this->getChat($data['chat_id']);
         return $output;
+   }
+
+   function getAdminPage($data) {
+    $output=array();
+    $sql="select * from abbsi_user where id = " . $data['uid'];
+    $rs=$this->X->sql($sql);
+    $output['user']=$rs[0];
+
+    $sql="select * from abbsi_user order by last_name, id";
+    $rs=$this->X->sql($sql);
+    $output['users']=$rs;
+    return $output;
+   }
+
+   function getMarkerList($data) {
+    $output=array();
+    $sql="select * from abbsi_user where id = " . $data['uid'];
+    $rs=$this->X->sql($sql);
+    $output['user']=$rs[0];
+
+    $sql="select * from abbsi_marker order by marker_code, id";
+    $rs=$this->X->sql($sql);
+    $output['list']=$rs;
+    return $output;
    }
 
    function getMemberDashboard($data) {
@@ -410,7 +499,14 @@ class KSA {
     $sql="select * from abbsi_convo where member_id = " . $member_id . " order by id desc";
     $rs=$this->X->sql($sql);
     $output['convo']=$rs;
+
+
+    $formData=array();
+    $formData['type']="note";
+    $output['formData']=$formData;
+
     return $output;
+
 }
 
     }
@@ -452,6 +548,22 @@ class KSA {
            case 'chat':
                      $output=$A->doChat($data);
                      break;
+            case 'general':
+                    $data['program']="general";
+                    $output=$A->getHomePage($data);
+                    break;
+            case 'skincare':
+                    $data['program']="skincare";
+                    $output=$A->getHomePage($data);
+                    break;
+            case 'longevity':
+                    $data['program']="longevity";
+                    $output=$A->getHomePage($data);
+                    break;
+            case 'diet-exercise':
+                    $data['program']="diet-exercise";
+                    $output=$A->getHomePage($data);
+                    break;
             case 'switch-member':
                     $output=$A->switchMember($data);
                     break;
@@ -464,6 +576,12 @@ class KSA {
             case 'post-add-member':
                     $output=$A->postAddMember($data);
                     break;
+            case 'post-add-member':
+                    $output=$A->postAddMarker($data);
+                    break;
+            case 'post-add-member':
+                    $output=$A->postAddUser($data);
+                    break;
             case 'members':
                     $output=$A->getMemberList($data);
                     break;
@@ -474,6 +592,9 @@ class KSA {
                      $output=$A->doNewChat($data);
                      break;
             case 'add-member-form':
+                    $output=$A->getAddMemberForm($data);
+                    break;
+            case 'add-user-form':
                     $output=$A->getAddMemberForm($data);
                     break;
             case 'member-dashboard':
@@ -503,7 +624,20 @@ class KSA {
             case 'switch-companies':
                     $output=$A->swtichCompanies($data);
                     break;
+            case 'admin':
+                    $output=$A->getAdminPage($data);
+                    break;
+            case 'marker-list':
+                    $output=$A->getMarkerList($data);
+                    break;
+            case 'add-marker-form':
+                    $output=$A->getAddMarkerForm($data);
+                    break;
+            case 'post-add-marker':
+                    $output=$A->postAddMarker($data);
+                    break;
             default:
+                    $data['program']="general";
                      $output=$A->getHomePage($data);
                     break;
             }

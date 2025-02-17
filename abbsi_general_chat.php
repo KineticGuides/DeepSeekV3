@@ -69,7 +69,8 @@ array_push($msgs, $msg);
 
 $t=array();
 $t['messages']=$msgs;
-$t['model']="hf.co/kineticseas/DeepSeekMedical-FullFinetune-GGUF:latest";
+$t['model']="hf.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF:latest";
+
 $t['stream']=true;
 $data = $t;
 $jsonData=json_encode($t);

@@ -1,0 +1,168 @@
+<div #chatContainer class="content-wrappe chat-container" >
+    <div class="row">
+        <div class="col-sm-12 col-12">
+    
+          <div class="profile-header">
+            <h1 style="font-size: 18px;">Welcome, Guest</h1>
+            <div class="profile-header-content">
+              <div class="profile-header-tiles">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="profile-tile">
+                      <span class="icon" style="background-color: #34495e;">
+                        <i class="bi bi-pentagon"></i>
+                      </span>
+                      <div class="row" style="width:100%">
+                        <div class="col-8 pt-2">
+                          <h6>Member - <span>{{ data!.member.member_name}}</span> </h6>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                          <button [routerLink]="['/members']" class="btn btn-primary" style="background-color: #34495e;">Change Member</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div class="profile-tile">
+                      <span class="icon" style="background-color: #34495e;"> 
+                        <i class="bi bi-coin"></i>
+                      </span>
+                      <h6>Current Chat: <span>{{ data!.current_chat.title}} ({{ data!.current_chat.create_timestamp }})</span> </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-avatar-tile">
+                <img src="assets/images/user.png" class="img-fluid" alt="Bootstrap Gallery" />
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <!-- Row end -->
+    
+      <!-- Row start -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header p-2 pt-3" style="background-color: #34495e;">
+              <h3 style="font-size:20px; color: white; background-color: #34495e;">Diet & Exercise Chatbot</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  Chat History
+                </div>
+                <div class="card-body">
+                  <div class="table-responsiv">
+                    <table class="table m-0">
+                      <thead>
+                        <tr>
+                          <th>Date/Time</th>
+                          <th>Topic</th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let n of data.convo">
+                          <td (click)="switchChat(n.id)">{{ n.create_timestamp }}</td>
+                          <td (click)="switchChat(n.id);" *ngIf="n.editing === 'N'">{{ n.title }}</td>
+                          <td *ngIf="n.editing === 'Y'">
+                            <input type="text" [(ngModel)]="n.title" class="formControl" 
+                                   (keyup.enter)="postEditConvo(n)">
+                        </td>
+                          <td><a (click)="editConvo(n)"><i class="bi bi-pencil"></i></a></td>
+                          <td><a (click)="archiveConvo(n)"><i class="bi bi-archive"></i></a></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 col-12">
+          <!-- Row start -->
+          <div class="row p-2">
+            <div class="card p-2">
+              <div class="card-header">
+                <div class="card-title">Chat</div>
+              </div>
+              <div class="card-body p-2">
+                <div class="chats-text">
+                  This AI chat provides Diet and Exercise information for reference only. Physicians must rely on their own clinical judgment, 
+                  knowledge, and expertise when making medical decisions. This tool is not a substitute for professional evaluation, diagnosis, or treatment.
+                </div>
+                <div *ngIf="message.length==0&&data.chat.length==0" class="chats-text mt-3">
+                  Please enter a question in the bottom chat window to begin or select an existing chat from the list.
+                </div>
+                <ul *ngIf="message.length>0||data.chat.length>0" class="chats">
+                    <li *ngFor="let m of data.chat" [class.chats-left]="m.role=='assistant'" [class.chats-right]="m.role=='user'">
+                        <div class="chats-avatar">
+                            <img [src]="m.role == 'assistant' ? 'assets/images/user7.png' : 'assets/images/user.png'" alt="Admin Panel">
+                            <div class="chats-name">{{ m.role == 'assistant' ? 'ABBSI-AI' : 'You' }}</div>
+                        </div>
+                        <div *ngIf="m.think.length===0">
+                        <div class="row">
+                          <div class="col-6">
+                          </div>
+                          <div class="col-5" style="text-align: right">
+                            <a (click)="deleteOneChat(m);"><i class="bi bi-trash"></i><span style="font-size:9px; margin-bottom:9px;">Delete<br></span></a><br>
+                          </div>
+                        </div>
+                        </div>
+                        <div *ngIf="m.think.length>0">
+                          <div class="row">
+                            <div class="col-6">
+                              <a (click)="toggleThoughts(m);"><i class="bi bi-zoom-in"></i><span style="font-size:9px; margin-bottom:9px;">Thoughts<br></span></a><br>
+                            </div>
+                            <div class="col-6" style="text-align: right">
+                              <a (click)="deleteOneChat(m);"><i class="bi bi-trash"></i><span style="font-size:9px; margin-bottom:9px;">Delete<br></span></a><br>
+                            </div>
+                          </div>
+                           <div class="chats-text mb-3" style="background-color: beige;" *ngIf="m.showing=='Y'" [innerHTML]="m.think"></div>
+                        </div>
+                        <div class="chats-text" [innerHTML]="m.content"></div>
+                        <div class="chats-hour">{{ m.create_timestamp }} <span class="icon-done_all"></span></div>
+                    </li>
+                    <li *ngIf="message.length > 0" class="chats-left">
+                      <div class="chats-avatar">
+                        <img src="assets/images/user.png" alt="Admin Panel">
+                        <div class="chats-name">ABBSI-AI</div>
+                      </div>
+                      <div #chatContainer class="chats-text form-control" style="min-height: 75px; overflow-y: hidden; width: auto;" [innerHTML]="message"></div>
+                      <div class="chats-hour"> <span class="icon-done_all"></span></div>
+                    </li>
+                  </ul>
+                  <br>&nbsp;<br>
+            </div>
+            </div>
+          </div>
+          <div #endofconversation id="endofconversation"></div>
+          <!-- Row end -->
+          <div class="row fixed-bottom">
+    
+           <div class="col-12">
+              <div class="bg-light p-3">
+                <div class="input-group">
+                  <textarea id="prompt" class="form-control" [(ngModel)]="prompt" rows="3" placeholder="Type your message..."></textarea>
+                  <button *ngIf="working=='N'" (click)="postChat();" class="btn btn-primary" style="background-color: #34495e;" type="button">Submit</button>
+                  <button *ngIf="working=='Y'"  class="btn btn-light" type="button">--Working--</button>
+                  <button class="btn btn-secondary" type="button" (click)="clearTextarea()" style="background-color: #85929e;">Clear</button>
+                  <button (click)="newChat();" class="btn btn-info" style="background-color: #34495e;" type="button">New Conversation</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+        </div>

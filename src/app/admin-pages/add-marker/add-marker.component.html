@@ -1,0 +1,103 @@
+<div class="container" style="background-color: #f2f2f2; border: 2px dashed blue; padding: 20px; text-align: left; margin: 0 auto;">
+    <div class="row card card-header" style="background-color: #d0d0d0;">
+        <div class="col-4 p-1">
+            <h3 style="font-size:24px;" class="p-1">Add Marker</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Marker Code</label></div>
+                <div class="col-9">
+                <input name="marker_code" [(ngModel)]="formData!['marker_code']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Marker Name</label></div>
+                <div class="col-9">
+                <input name="marker_name" [(ngModel)]="formData!['marker_name']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Units</label></div>
+                <div class="col-9">
+                <select name="units" [(ngModel)]="formData!['units']" class="form-control"> 
+                    <option value="lbs">lbs</option>
+                    <option value="pct">% (percentage)</option>
+                    <option value="date">date</option>
+                    <option value="time">time</option>
+                    <option value="seconds">seconds</option>
+                    <option value="years">years</option>
+                    <option value="days">days</option>
+                    <option value="in">inches</option>
+                    <option value="ft">feet</option>
+                    <option value="cm">centimeters</option>
+                    <option value="meters">meters</option>
+                    <option value="10^3/µl">10^3/µl</option>
+                    <option value="10^6/µL">10^6/µL</option>
+                    <option value="mg/dL">mg/dL</option>
+                    <option value="g/dL">g/dL</option>                    
+                    <option value="g/L">g/L</option>
+                    <option value="fL">fL (femtoliters)</option>
+                    <option value="pg">pg (picograms)</option>
+                    <option value="mEq/L">mEq/L (or mmol/L)</option>
+                    <option value="U/L">U/L (units per liter)</option>
+                    <option value="µIU/mL">µIU/mL</option>
+                    <option value="mIU/L">mIU/L</option>
+                    <option value="pmol/L">pmol/L</option>
+                    <option value="nmol/L">nmol/L</option>
+                    <option value="ng/dL">ng/dL</option>
+                    </select>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">                  
+            <div class="row mt-2">
+                    <div class="col-3"><label class="form-label">Data Type</label></div>
+                    <div class="col-9">
+                        <select name="data_type" [(ngModel)]="formData!['data_type']" class="form-control"> 
+                            <option value="date">date</option>
+                            <option value="datetime">datetime</option>
+                            <option value="time">time</option>
+                            <option value="int">int</option>
+                            <option value="float(4,1)">float(4,1)</option>
+                            <option value="float(5,1)">float(5,1)</option>
+                            <option value="float(6,2)">float(6,2)</option>
+                            <option value="float(7,3)">float(7,3)</option>
+                            <option value="fload(8,4)">float(8,4)</option>
+                            </select>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Note</label></div>
+                <div class="col-9">
+                <input name="note" [(ngModel)]="formData!['note']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pb-2 m-2" style="background-color: #f2f2f2;">
+        <div class="col-sm-6 col-12">
+            <div class="card"  style="background-color: #f2f2f2;">
+              <div class="card-body"  style="background-color: #f2f2f2;">
+                <div class="m-0"  style="background-color: #f2f2f2;">
+                    <button (click)="postForm()" class="m-2 btn btn-primary">Save Changes</button>
+<!--                    <button (click)="deleteForm()" class="m-2 btn btn-danger">Delete Record</button> -->
+                    <button (click)="closeIt()" class="btn btn-secondary m-2">Cancel</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>

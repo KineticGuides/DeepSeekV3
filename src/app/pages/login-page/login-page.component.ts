@@ -9,13 +9,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
 import { SearchFilterPipe } from '../../search-filter.pipe';
-import { MemberFormComponent } from '../crud/member/member-form/member-form.component';
 import { AddMemberFormComponent } from "../../forms/add-member-form/add-member-form.component";
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule, MemberFormComponent, AddMemberFormComponent],
+  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule, AddMemberFormComponent],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'
 })

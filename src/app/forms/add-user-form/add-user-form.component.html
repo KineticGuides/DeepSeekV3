@@ -1,0 +1,87 @@
+<!-- <div class="container" style="background-color: #f2f2f2; border: 2px dashed blue; padding: 20px; text-align: left; margin: 0 auto;"> -->
+    <div class="container" style="background-color: #f2f2f2">
+    <div class="row card card-header" style="background-color: #eaeded;">
+        <div class="col-4 p-1">
+            <h3 style="font-size:24px;" class="p-1">Add User</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">First</label></div>
+                <div class="col-9">
+                <input name="contact_phone" [(ngModel)]="formData!['first_name']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Last</label></div>
+                <div class="col-9">
+                <input name="contact_phone" [(ngModel)]="formData!['last_name']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">    
+        <div class="col-sm-4 col-12">
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Role</label></div>
+                <div class="col-9">
+                    
+                <select name="contact_phone" [(ngModel)]="formData!['role']" class="form-control" placeholder=""> 
+                <option value="user">User</option>
+                <option value="read-only">Read only</option>
+                <option value="admin">Admin</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">                  
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Email</label></div>
+                <div class="col-9">
+                    <input name="contact_phone" [(ngModel)]="formData!['email']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-12">                  
+            <div class="row mt-2">
+                <div class="col-3"><label class="form-label">Phone</label></div>
+                <div class="col-9">
+                <input name="contact_phone" [(ngModel)]="formData!['phone']" type="text" class="form-control" placeholder=""> </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-sm-4 col-12">                  
+                <div class="row mt-2">
+                    &nbsp; &nbsp;
+                </div>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-12">                  
+                <div class="row mt-2">
+                    <div class="col-3"><label class="form-label">Password</label></div>
+                    <div class="col-9">
+                        <input name="contact_phone" [(ngModel)]="formData!['pwd']" type="text" class="form-control" placeholder=""> </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row pb-2 m-2" style="background-color: #f2f2f2;">
+        <div class="col-sm-6 col-12">
+            <div class="card"  style="background-color: #f2f2f2;">
+              <div class="card-body"  style="background-color: #f2f2f2;">
+                <div class="m-0"  style="background-color: #f2f2f2;">
+                    <button (click)="postForm()" class="m-2 btn btn-primary">Save Changes</button>
+<!--                    <button (click)="deleteForm()" class="m-2 btn btn-danger">Delete Record</button> -->
+                    <button (click)="closeIt()" class="btn btn-secondary m-2">Cancel</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>

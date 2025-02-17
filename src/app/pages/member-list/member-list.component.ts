@@ -9,12 +9,13 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CalendarModule } from '../../calendar/calendar.module';
 import { ProviderCalendarModule } from '../../provider-calendar/provider-calendar.module';
 import { SearchFilterPipe } from '../../search-filter.pipe';
+import { AddMemberFormComponent } from "../../forms/add-member-form/add-member-form.component";
 
 
 @Component({
   selector: 'app-member-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule],
+  imports: [CommonModule, RouterLink, FormsModule, SearchFilterPipe, NgxPaginationModule, AddMemberFormComponent],
   templateUrl: './member-list.component.html',
   styleUrl: './member-list.component.css'
 })
@@ -24,6 +25,8 @@ export class MemberListComponent  implements OnInit {
   message: any;
   searchText: string = '';
   p: any = 1;
+  showing: string = 'N';
+
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -39,6 +42,57 @@ export class MemberListComponent  implements OnInit {
           this.data=data;
       }) 
   }
+
+  toggleThoughts() {
+    if (this.showing=='N') {
+      this.showing='Y'
+    } else {
+      this.showing='N';
+    }
+
+}
+
+  switchUserGeneral(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/general']);
+  }) 
+
+  }
+
+  switchUserLongevity(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/longevity']);
+  }) 
+
+  }
+
+  switchUserDiet(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/diet-exercise']);
+  }) 
+
+  }
+
+  switchUserSkincare(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/skincare']);
+  }) 
+
+  }
+
+  switchUser(m: any): void { 
+    let formData: any = { "member_id": m.id }
+    this._dataService.postData("switch-member", formData).subscribe((data: any)=> { 
+    this._router.navigate(['/general']);
+  }) 
+
+  }
+
+
 
   postForm(): void {
   

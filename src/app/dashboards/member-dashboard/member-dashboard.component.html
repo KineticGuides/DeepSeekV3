@@ -1,0 +1,245 @@
+<div class="content-rapper">
+    <div class="row">
+        <div class="col-sm-12 col-12">
+    
+          <div class="profile-header">
+            <h1 style="font-size: 18px;">Welcome, Guest</h1>
+            <div class="profile-header-content">
+              <div class="profile-header-tiles">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-pentagon"></i>
+                      </span>
+                      <div class="row" style="width:100%">
+                        <div class="col-8 pt-2">
+                          <h6>Member - <span>{{ data!.member.member_name}}</span> </h6>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                          <button [routerLink]="['/members']" class="btn btn-primary">Change Member</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+ <!--                 <div class="col-sm-6 col-12">
+                    <div class="profile-tile">
+                      <span class="icon">
+                        <i class="bi bi-coin"></i>
+                      </span>
+                      <h6>Current Chat: <span>{{ data!.current_chat.title}} ({{ data!.current_chat.create_timestamp }})</span> </h6>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="profile-avatar-tile">
+                <img src="assets/images/user.png" class="img-fluid" alt="Bootstrap Gallery" />
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <!-- Row end -->
+        <div class="row mb-3 ms-3">
+            <div class="card-header">
+                <div class="card-header">
+                    <ol class="breadcrumb d-lg-flex d-none">
+                        <li class="breadcrumb-item">
+                          <i class="bi bi-house"></i>
+                          <a [routerLink]="['/']">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                          <a [routerLink]="['/members']">Member List</a>
+                        </li>
+                        <li class="breadcrumb-item">Member Dashboard</li>
+                      </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="card m-2 p-3">
+            <div class="row m-2" style="background-color: lightgray">
+              <div class="col-3">
+                <h2 style="font-size:24px;">{{ data.member['first_name'] }} {{ data.member['last_name'] }}</h2>
+              </div>
+              <div class="col-9" style="text-align: right">
+                <button (click)="toggleEncounters()"  class="btn btn-primary m-2">Encounters</button>   
+                <button (click)="toggleEncounters()" class="btn btn-secondary m-2">Measurements</button>   
+                <button (click)="toggleTests()" class="btn btn-secondary m-2">Test Results</button>   
+                <button (click)="toggleNotes()" class="btn btn-secondary m-2">Member Notes</button>   
+                <button (click)="toggleMeds()" class="btn btn-secondary m-2">Medications/Supplements</button>   
+                <button (click)="toggleEncounters()" class="btn btn-secondary m-2">Edit Member Profile</button>      
+                <button (click)="toggleOrders()" class="btn btn-success m-2">Orders</button> 
+                <button (click)="togglePrograms()" class="btn btn-success m-2">Programs</button>                
+              </div>
+            </div>
+            <div class="row m-2"> 
+              <div class="col-8">
+                {{ data.member['last_name']}}, {{ data.member['first_name'] }}<br>
+                {{ data.member['address'] }}<br>
+                {{ data.member['city'] }}, {{ data.member['state'] }} {{ data.member['zip'] }}
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div *ngIf="encounters=='Y'" class="col-12 mt-3">
+                <app-member-encounter-list (close)="toggleEncounters()"></app-member-encounter-list>
+              </div>   
+              <div *ngIf="meds=='Y'" class="col-12 mt-3">
+                <app-member-meds-list (close)="toggleMeds()"></app-member-meds-list>
+              </div>   
+              <div *ngIf="notes=='Y'" class="col-12 mt-3">
+                <app-member-note-list (close)="toggleNotes()"></app-member-note-list>
+              </div>   
+              <div *ngIf="orders=='Y'" class="col-12 mt-3">
+                <app-member-order-list (close)="toggleOrders()"></app-member-order-list>
+              </div>   
+              <div *ngIf="programs=='Y'" class="col-12 mt-3">
+                <app-member-programs-list (close)="togglePrograms()"></app-member-programs-list>
+              </div>   
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-8 col-sm-12 col-12">
+                <!-- Row start -->
+                <div class="row">
+                  <div class="col-sm-12 col-12">
+                    <div class="card" style="background-color: #ecf0f1">
+                      <div class="card-header">
+                        <div class="card-title">Quick Entry:</div>
+                      </div>
+                      <div class="card-body">
+                        <div class="create-offer-container">
+                            <div class="row">
+                                <div class="col-sm-4 col-12">
+                                    <div class="row mt-2">
+                                        <div class="col-3"><label class="form-label">Type</label></div>
+                                        <div class="col-9">
+                                        <select name="contact_phone" [(ngModel)]="formData!['type']" type="text" class="form-control" placeholder=""> 
+                                            <option value="">-- Select Type --</option>
+                                            <option value="encounter">Encounter</option>                                            
+                                            <option value="note">Note</option>
+                                            <option value="measurement">Measurement</option>
+                                            <option value="measurement">Medication</option>
+                                            <option value="measurement">Supplements</option>
+                                            <option value="labs">Lab Order</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" *ngIf="formData['type']==='encounter'">
+                                <div class="col-2">Encounter Type:</div>
+                                <div class="col-9">
+                                    <select name="contact_phone" [(ngModel)]="formData!['encounter_type']" type="text" class="form-control" placeholder=""> 
+                                        <option value="">-- Select Type --</option>
+                                        <option value="encounter">Phone</option>                                            
+                                        <option value="note">In-Person (Walkin)</option>
+                                        <option value="measurement">In-Person (Appointment)</option>
+                                        <option value="measurement">Text Message</option>
+                                        <option value="measurement">Email</option>
+                                    </select>
+                                </div>
+                                <textarea [(ngModel)]="formData!['type']"  class="form-control" rows="3"></textarea>
+                           </div>                            
+                          <div class="row" *ngIf="formData['type']!=='labs'">
+                               <textarea [(ngModel)]="formData!['note']"  class="form-control" rows="3"></textarea>
+                          </div>
+                          <div class="share-thoughts-footer">
+                            <div class="share-icons">
+                            <button class="btn btn-info btn-sm">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card end -->
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-12">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="award-tile shade-green">
+                    <div class="award-icon">
+                      <i class="bi bi-receipt"></i>
+                    </div>
+                    <h3>0</h3>
+                    <h4>Programs</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div class="award-tile shade-blue">
+                      <div class="award-icon">
+                        <i class="bi bi-gem"></i>
+                      </div>
+                      <h3>0</h3>
+                      <h4>Orders</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div class="award-tile shade-primary">
+                    <div class="award-icon">
+                      <i class="bi bi-receipt"></i>
+                    </div>
+                    <h3>0</h3>
+                    <h4>Measurements</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div class="award-tile shade-red">
+                      <div class="award-icon">
+                        <i class="bi bi-gem"></i>
+                      </div>
+                      <h3>0</h3>
+                      <h4>Tests</h4>
+                    </div>
+                  </div>
+              </div>
+              <div class="row me-2 ms-0 mt-2">
+                <div class="col-12 m-2 p-2 card" style="background-color: #ecf0f1;">
+                  <div class="settings-block">
+                    <div class="card-title">Areas of Interest</div>
+                    <div class="settings-block-body">
+                      <div class="list-group">
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                          <div>General Wellness</div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="showPurchaseNotifications">
+                            <label class="form-check-label" for="showPurchaseNotifications"></label>
+                          </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                          <div>Longevity</div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="showNotifications">
+                            <label class="form-check-label" for="showNotifications"></label>
+                          </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                          <div>Skin Care</div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="showEmailNotifications" checked="">
+                            <label class="form-check-label" for="showEmailNotifications"></label>
+                          </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                          <div>Diet and Exercise</div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="showChatNotifications">
+                            <label class="form-check-label" for="showChatNotifications"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            <div class="row">
+            </div>
+      
+          </div>
+          </div>
+          </div>
